@@ -4,6 +4,18 @@ body {
 
 /**
  * --------------------------------------------------------------------
+ * Avenir Next
+ * --------------------------------------------------------------------
+ */
+@font-face {
+  font-family: "Avenir Next";
+  font-display: swap;
+  src: local("Avenir Next"), url("fonts/Avenir-Next.ttc") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/**
+ * --------------------------------------------------------------------
  * Arial
  * --------------------------------------------------------------------
  */
@@ -960,6 +972,47 @@ body {
 }
 .item__8:nth-child(n+2) {
   margin-top: 8px;
+}
+
+.header {
+  width: 100% !important;
+}
+.header ~ .uk-sticky-placeholder {
+  display: none !important;
+}
+.header.hoverMenu, .header.uk-active {
+  background: #000;
+  top: 0 !important;
+}
+.hoverMenu .header__bottom, .uk-sticky.uk-active .header__bottom {
+  border-top: 1px solid rgb(47, 47, 47);
+}
+.header__bottom .uk-navbar-dropdown {
+  background: #000;
+  border-top: 1px solid rgb(47, 47, 47);
+}
+.header__bottom .uk-navbar-nav > li > a {
+  min-height: 45px;
+  font-family: "Avenir Next", sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  position: relative;
+}
+.header__bottom .uk-navbar-nav > li > a:hover:after, .header__bottom .uk-navbar-nav > li > a[aria-expanded=true]:after {
+  transform: scaleX(1);
+  background-color: currentColor;
+}
+.header__bottom .uk-navbar-nav > li > a:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  height: 2px;
+  background-color: var(---color-menu-link-hover);
+  transform: scaleX(0);
+  transition: transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 /*# sourceMappingURL=style.css.map */

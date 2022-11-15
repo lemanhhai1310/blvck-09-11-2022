@@ -9,7 +9,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/css/uikit.min.css" />
-    <!--<link rel="stylesheet" href="style.css?v=--><?php //echo(time()) ?><!--">-->
+    <link rel="stylesheet" href="style.css?v=<?php echo(time()) ?>">
 
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
@@ -17,12 +17,106 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit-icons.min.js"></script>
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
-    <style>
-        <?= file_get_contents('style.css'); ?>
-    </style>
 </head>
 <body class="<?= (isset($bodyClass))?$bodyClass:'' ?>">
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
-    
+<header id="header" class="header uk-position-top uk-position-z-index uk-position-fixed" uk-sticky>
+    <div class="header__top">
+        <div class="uk-container uk-container-expand">
+            <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="nav-overlay uk-navbar-left">
+                    <div class="uk-navbar-item uk-light">
+                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="instagram"></a>
+                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="pinterest"></a>
+                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="youtube"></a>
+                        <a href="#" class="uk-icon-link" uk-icon="tiktok"></a>
+                    </div>
+                </div>
+                <div class="nav-overlay uk-navbar-center">
+                    <a href="" class="uk-navbar-item uk-logo"><img src="images/Blvck_Paris_White_110x.png.webp" alt=""></a>
+                </div>
+                <div class="nav-overlay uk-navbar-right uk-light">
+                    <a class="uk-navbar-toggle" uk-icon="icon: user" href=""></a>
+                    <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+                    <a class="uk-navbar-toggle" uk-icon="icon: cart" href=""></a>
+                </div>
+                <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+
+                    <div class="uk-navbar-item uk-width-expand">
+                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                            <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
+                        </form>
+                    </div>
+
+                    <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <nav class="header__bottom uk-flex-center uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left uk-light">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#">MEN</a>
+                    <div class="uk-navbar-dropdown uk-padding-remove" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false; offset: 0; auto-update: false;">
+                        <div class="uk-child-width-1-3 uk-grid-collapse uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-body">
+                                    <div class="uk-child-width-1-2" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-cover-container">
+                                    <img src="images/Men-Nav_5aa642b7-259b-4343-bf6e-e062a5e8145b.jpg" alt="" uk-cover="">
+                                    <canvas width="573" height="459"></canvas>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-cover-container">
+                                    <img src="images/social_share_900x.jpg" alt="" uk-cover="">
+                                    <canvas width="573" height="459"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">WOMEN</a>
+                </li>
+                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="#">BLVCK HOME</a></li>
+                <li><a href="#">DIGITAL</a></li>
+                <li><a href="#">WHTE</a></li>
+                <li><a href="#">NFT</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
