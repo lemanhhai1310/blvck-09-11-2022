@@ -98,6 +98,10 @@
 <!--/BLVCK X CASETIFY-->
 
 <!--BLOG-->
-
+<div class="uk-section-xsmall uk-text-center">
+    <div class="uk-container uk-container-expand">
+        <h2 class="uk-h2 uk-margin-remove">Blog posts</h2>
+    </div>
+</div>
 <!--/BLOG-->
 <?php require "template-parts/layouts/footer.php"; ?>
