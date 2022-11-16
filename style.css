@@ -21,6 +21,39 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Avenir Next LT Pro Bold";
+  font-display: swap;
+  src: local("Avenir Next LT Pro Bold"), url("fonts/Avenir_Next_Pro_Full/AvenirNextLTPro-Bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/**
+ * --------------------------------------------------------------------
+ * Montserrat
+ * --------------------------------------------------------------------
+ */
+@font-face {
+  font-family: "Montserrat SemiBold";
+  font-display: swap;
+  src: local("Montserrat SemiBold"), url("fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-display: swap;
+  src: local("Montserrat Medium"), url("fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  font-display: swap;
+  src: local("Montserrat Bold"), url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /**
  * --------------------------------------------------------------------
  * Arial
@@ -107,6 +140,12 @@ body {
 }
 .uk-height-min-large {
   min-height: 450px;
+}
+.uk-offcanvas-overlay:before {
+  background: rgba(0, 0, 0, 0.7);
+}
+.uk-overlay-primary {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 1600px) {
@@ -793,6 +832,20 @@ body {
   margin-top: 50px;
 }
 
+.fz-8 {
+  font-size: 8px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-8 {
+    font-size: calc(8px + 0 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-8 {
+    font-size: 8px !important;
+  }
+}
+
 .fz-10, .footer__moneySelect {
   font-size: 10px !important;
 }
@@ -821,16 +874,16 @@ body {
   }
 }
 
-.fz-12, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+.fz-12, .cart__offcanvas__body__price, .cart__offcanvas__body__size, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
   font-size: 12px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-12, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+  .fz-12, .cart__offcanvas__body__price, .cart__offcanvas__body__size, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
     font-size: calc(12px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-12, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+  .fz-12, .cart__offcanvas__body__price, .cart__offcanvas__body__size, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
     font-size: 12px !important;
   }
 }
@@ -849,16 +902,16 @@ body {
   }
 }
 
-.fz-14, .footer__title, .footer__accordion .uk-accordion-title {
+.fz-14, .cart__offcanvas__body__name, .cart__offcanvas__header__title, .footer__title, .footer__accordion .uk-accordion-title {
   font-size: 14px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-14, .footer__title, .footer__accordion .uk-accordion-title {
+  .fz-14, .cart__offcanvas__body__name, .cart__offcanvas__header__title, .footer__title, .footer__accordion .uk-accordion-title {
     font-size: calc(14px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-14, .footer__title, .footer__accordion .uk-accordion-title {
+  .fz-14, .cart__offcanvas__body__name, .cart__offcanvas__header__title, .footer__title, .footer__accordion .uk-accordion-title {
     font-size: 14px !important;
   }
 }
@@ -877,16 +930,16 @@ body {
   }
 }
 
-.fz-16, .footer__navList > li > a, .footer__label {
+.fz-16, .cart__offcanvas__footer__btn, .cart__offcanvas__footer__txt, .footer__navList > li > a, .footer__label, .header__bottom__box__desc {
   font-size: 16px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-16, .footer__navList > li > a, .footer__label {
+  .fz-16, .cart__offcanvas__footer__btn, .cart__offcanvas__footer__txt, .footer__navList > li > a, .footer__label, .header__bottom__box__desc {
     font-size: calc(16px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-16, .footer__navList > li > a, .footer__label {
+  .fz-16, .cart__offcanvas__footer__btn, .cart__offcanvas__footer__txt, .footer__navList > li > a, .footer__label, .header__bottom__box__desc {
     font-size: 16px !important;
   }
 }
@@ -916,6 +969,34 @@ body {
 @media screen and (min-width: 1200px) {
   .fz-30 {
     font-size: 30px !important;
+  }
+}
+
+.fz-44 {
+  font-size: 30.8px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-44 {
+    font-size: calc(30.8px + 13.2 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-44 {
+    font-size: 44px !important;
+  }
+}
+
+.fz-45, .header__bottom__box__title {
+  font-size: 31.5px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-45, .header__bottom__box__title {
+    font-size: calc(31.5px + 13.5 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-45, .header__bottom__box__title {
+    font-size: 45px !important;
   }
 }
 
@@ -971,7 +1052,7 @@ body {
 .header ~ .uk-sticky-placeholder {
   display: none !important;
 }
-.header.activeSearch, .header.hoverMenu, .header.uk-sticky-below {
+.header.activeSearch, .header.hoverMenu, .header.uk-active {
   background: #000;
   top: 0 !important;
 }
@@ -996,6 +1077,10 @@ body {
 .header__top__boxSearch .uk-search-input::placeholder {
   color: #ffffff;
 }
+.header__top .uk-badge {
+  transform: translate(50%, -50%);
+  z-index: 1;
+}
 .header__top .uk-navbar-item, .header__top .uk-navbar-toggle {
   min-height: 70px;
 }
@@ -1010,12 +1095,32 @@ body {
 .activeSearch .header__bottom {
   display: none;
 }
-.hoverMenu .header__bottom, .uk-sticky-below .header__bottom {
+.hoverMenu .header__bottom, .uk-active .header__bottom {
   border-top: 1px solid rgb(47, 47, 47);
 }
 .header__bottom .uk-navbar-dropdown {
   background: #000;
   border-top: 1px solid rgb(47, 47, 47);
+}
+.header__bottom__box__title {
+  font-family: "Montserrat SemiBold", sans-serif;
+  color: #ffffff;
+  line-height: 1.2045454545;
+}
+.header__bottom__cover:hover .header__bottom__box__title {
+  color: rgb(134, 134, 134);
+}
+.header__bottom__box__desc {
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
+  line-height: 1.5;
+  color: #ffffff;
+}
+.header__bottom__box > * {
+  margin: 0;
+  letter-spacing: 2px;
+}
+.header__bottom__box > *:nth-child(n+2) {
+  margin-top: 20px;
 }
 .header__bottom .uk-navbar-dropdown-nav > li {
   opacity: 0;
@@ -1089,6 +1194,7 @@ body {
 .footer__title, .footer__accordion .uk-accordion-title {
   color: #ffffff;
   margin-bottom: 17px !important;
+  font-family: "Montserrat Medium", sans-serif;
 }
 .footer__navList > li > a {
   font-family: "Avenir Next LT Pro Regular", sans-serif;
@@ -1132,6 +1238,152 @@ body {
   .footer__item-100-20:nth-child(n+2) {
     margin-top: 100px;
   }
+}
+
+.cart__offcanvas__bar {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #ffffff;
+  padding: 0;
+}
+@media (min-width: 960px) {
+  .cart__offcanvas__bar {
+    margin: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 500px;
+  }
+  .uk-offcanvas-flip .cart__offcanvas__bar {
+    right: calc(0px - 500px - 15px);
+  }
+}
+@media (max-width: 959.98px) {
+  .cart__offcanvas__bar {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    top: 100vh;
+    transition: top 0.5s ease-in-out;
+    transition-property: top !important;
+  }
+  .uk-open > .cart__offcanvas__bar {
+    top: 15px;
+  }
+}
+.cart__offcanvas__dc, .cart__offcanvas__footer, .cart__offcanvas__body__box2, .cart__offcanvas__body__box1, .cart__offcanvas__header {
+  padding: calc(20px - 5px);
+}
+@media (min-width: 960px) {
+  .cart__offcanvas__dc, .cart__offcanvas__footer, .cart__offcanvas__body__box2, .cart__offcanvas__body__box1, .cart__offcanvas__header {
+    padding: 20px;
+  }
+}
+.cart__offcanvas__header {
+  border-bottom: 1px solid #e3e3e3;
+  position: relative;
+  color: #aaaaaa !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+}
+.cart__offcanvas__header > * {
+  color: #aaaaaa !important;
+}
+.cart__offcanvas__header__title {
+  color: #aaaaaa !important;
+  margin: 0;
+  text-align: center;
+  font-family: "Montserrat Bold", sans-serif;
+}
+.cart__offcanvas__header__close {
+  color: #aaaaaa !important;
+}
+.cart__offcanvas__header__close svg {
+  transition: all 0.3s;
+}
+.cart__offcanvas__header__close:hover svg {
+  transform: rotate(-90deg);
+}
+.cart__offcanvas__body *,
+.cart__offcanvas__body > * {
+  color: #aaaaaa !important;
+}
+.cart__offcanvas__body__box2 {
+  min-height: 300px;
+  background: #fafafa;
+  border-top: 1px solid #e3e3e3;
+}
+.cart__offcanvas__body__name {
+  color: #000 !important;
+  font-family: "Avenir Next LT Pro Bold", sans-serif;
+  line-height: 1.4285714286;
+}
+.cart__offcanvas__body__name a {
+  color: #000 !important;
+}
+.cart__offcanvas__body__size {
+  color: #aaaaaa;
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
+  line-height: 1.3333333333;
+}
+.cart__offcanvas__body__price {
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
+  line-height: 1.3333333333;
+}
+.cart__offcanvas__body__price:nth-child(n+2) {
+  margin-left: 2px;
+}
+.cart__offcanvas__body__price--old {
+  color: #9a9a9a !important;
+}
+.cart__offcanvas__body__price--new {
+  color: #44BE70 !important;
+}
+.cart__offcanvas__body__item:nth-child(n+2) {
+  margin-top: 15px;
+  padding-top: 15px;
+  position: relative;
+}
+@media (min-width: 960px) {
+  .cart__offcanvas__body__item:nth-child(n+2) {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+}
+.cart__offcanvas__body__item:nth-child(n+2):before {
+  border-top: 1px solid #e3e3e3;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: calc(0px - 20px + 5px);
+}
+@media (min-width: 960px) {
+  .cart__offcanvas__body__item:nth-child(n+2):before {
+    right: calc(0px - 20px);
+  }
+}
+.cart__offcanvas__footer {
+  border-top: 1px solid #e3e3e3;
+  box-sizing: border-box;
+}
+.cart__offcanvas__footer > * {
+  color: #aaaaaa !important;
+}
+.cart__offcanvas__footer__txt {
+  font-family: "Avenir Next LT Pro Bold", sans-serif;
+  color: #aaaaaa !important;
+  line-height: 1.375;
+}
+.cart__offcanvas__footer__btn {
+  background: #000 !important;
+  color: #ffffff !important;
+  text-transform: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

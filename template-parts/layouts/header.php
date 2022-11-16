@@ -4,34 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="REFRESH" content="1800"/>
     <title><?= /** @var TYPE_NAME  */
-        (isset($data['title'])) ? $data['title'] : ''; ?></title>
+        (isset($data['title'])) ? $data['title'] : ''; ?> - Blvck EMEA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!--CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="style.css?v=<?php echo(time()) ?>">
 
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit-icons.min.js"></script>
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </head>
 <body class="<?= (isset($bodyClass))?$bodyClass:'' ?>">
 <?php //require "template-parts/commons/facebook_chat.php"; ?>
-<!--app-->
-<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 <!--Cart-->
-<div id="offcanvas-flip-cart" uk-offcanvas="flip: true; overlay: true">
-    <div class="uk-offcanvas-bar">
+<div id="offcanvas-flip-cart" class="cart__offcanvas" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar cart__offcanvas__bar uk-flex uk-flex-column">
+        <div class="cart__offcanvas__header">
+            <h3 class="cart__offcanvas__header__title">YOUR CART</h3>
+            <button class="uk-offcanvas-close cart__offcanvas__header__close uk-position-center-right uk-position-small" type="button" uk-close></button>
+        </div>
+        <div class="cart__offcanvas__body uk-flex-auto uk-overflow-auto">
+            <div class="cart__offcanvas__body__box1">
+                <?php
+                $data = array(
+                    array(
+                        'img' => 'images/0002_240x240.jpg',
+                        'name' => 'Bold Hoodie',
+                        'size' => 'M',
+                        'price-new' => '326.700.000 ₫',
+                        'price-old' => '4.064.000 ₫',
+                    ),
+                    array(
+                        'img' => 'images/0002_240x240.jpg',
+                        'name' => 'Bold Hoodie',
+                        'size' => '2XL',
+                        'price-new' => '326.700.000 ₫',
+                        'price-old' => '4.064.000 ₫',
+                    ),
+                    array(
+                        'img' => 'images/0002_240x240.jpg',
+                        'name' => 'Bold Hoodie',
+                        'size' => 'XL',
+                        'price-new' => '326.700.000 ₫',
+                        'price-old' => '4.064.000 ₫',
+                    ),
+                );
+                foreach ($data as $k=>$v): ?>
+                    <div class="cart__offcanvas__body__item">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <div class="uk-cover-container">
+                                    <img src="<?= $v['img'] ?>" alt="" uk-cover="">
+                                    <canvas width="90" height="90"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <h4 class="uk-h4 cart__offcanvas__body__name"><a href=""><?= $v['name'] ?></a></h4>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <a href="" uk-icon="icon: trash"></a>
+                                    </div>
+                                </div>
+                                <div class="cart__offcanvas__body__size"><?= $v['size'] ?></div>
+                                <div class="item__10" uk-grid>
+                                    <div class="uk-width-expand">
 
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <span class="cart__offcanvas__body__price cart__offcanvas__body__price--new"><?= $v['price-new'] ?></span>
+                                        <del class="cart__offcanvas__body__price cart__offcanvas__body__price--old"><?= $v['price-old'] ?></del>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="cart__offcanvas__body__box2">
 
-        <h3>Title</h3>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+            </div>
+        </div>
+        <div class="cart__offcanvas__footer">
+            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                <div class="uk-width-expand">
+                    <span class="cart__offcanvas__footer__txt">Subtotal (3 items)</span>
+                </div>
+                <div class="uk-width-auto">
+                    <span class="cart__offcanvas__footer__txt">2.778.800.000 ₫</span>
+                </div>
+            </div>
+            <div>
+                <button class="cart__offcanvas__footer__btn uk-button uk-button-secondary uk-width-1-1 uk-border-rounded" uk-icon="icon: lock"><span class="uk-text-middle uk-margin-small-left">Checkout</span></button>
+            </div>
+        </div>
     </div>
 </div>
 <!--/Cart-->
@@ -50,7 +122,8 @@
     </div>
 </div>
 <!--/Menu-mobile-->
-
+<!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 <header id="header" class="header uk-position-top uk-position-z-index uk-position-fixed" uk-sticky>
     <div class="header__top">
         <div class="uk-container uk-container-expand">
@@ -70,7 +143,7 @@
                     <a class="uk-navbar-toggle uk-visible@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
                     <div class="uk-navbar-item">
                         <a class="uk-position-relative" uk-icon="icon: cart" href="#offcanvas-flip-cart" uk-toggle="">
-                            <span class="uk-badge uk-position-top-right" style="transform: translate(50%, -50%);">1</span>
+                            <span class="uk-badge uk-position-top-right">9</span>
                         </a>
                     </div>
                 </div>
@@ -119,15 +192,25 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="uk-cover-container">
+                                <div class="uk-cover-container header__bottom__cover">
                                     <img src="images/Men-Nav_5aa642b7-259b-4343-bf6e-e062a5e8145b.jpg" alt="" uk-cover="">
                                     <canvas width="573" height="459"></canvas>
+                                    <div class="header__bottom__box uk-position-cover uk-padding-small uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+                                        <h3 class="uk-h3 header__bottom__box__title">READY-TO-WEAR</h3>
+                                        <p class="header__bottom__box__desc">Shop Now</p>
+                                    </div>
+                                    <a href="" class="uk-position-cover"></a>
                                 </div>
                             </div>
                             <div>
-                                <div class="uk-cover-container">
+                                <div class="uk-cover-container header__bottom__cover">
                                     <img src="images/social_share_900x.jpg" alt="" uk-cover="">
                                     <canvas width="573" height="459"></canvas>
+                                    <div class="header__bottom__box uk-position-cover uk-padding-small uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+                                        <h3 class="uk-h3 header__bottom__box__title">ACCESSORIES</h3>
+                                        <p class="header__bottom__box__desc">Shop Now</p>
+                                    </div>
+                                    <a href="" class="uk-position-cover"></a>
                                 </div>
                             </div>
                         </div>

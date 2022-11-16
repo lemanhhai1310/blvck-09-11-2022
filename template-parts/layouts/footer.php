@@ -76,53 +76,61 @@
             const uk_navbar_dropdown = x('.uk-navbar-dropdown');
             const header = x('.header');
             const btnClose_Search = x('.btnClose_Search');
-            const header__top__boxSearch__input = x('.header__top__boxSearch__input');
+            const html = x('html');
+            const body = x('body');
+            const cart__offcanvas = x('.cart__offcanvas');
 
-            let scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-            if (scrollTop > 0){
-                UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
-                    // do something
-                    header.classList.add('hoverMenu');
-                });
-                UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
-                    // do something
-                    header.classList.remove('hoverMenu');
-                });
-            }else {
-                UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
-                    // do something
-                    header.classList.add('hoverMenu');
-                });
-                UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
-                    // do something
-                    header.classList.remove('hoverMenu');
-                });
+            // Cart
+            if (cart__offcanvas){
+                UIkit.offcanvas(cart__offcanvas).show();
             }
+            // End Cart
 
-            document.onscroll = function () {
-                scrollTop = window.scrollY || document.documentElement.scrollTop;
+            // let scrollTop = window.scrollY || document.documentElement.scrollTop;
+            //
+            // if (scrollTop > 0){
+            //     UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
+            //         // do something
+            //         header.classList.add('hoverMenu');
+            //     });
+            //     UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
+            //         // do something
+            //         header.classList.remove('hoverMenu');
+            //     });
+            // }else {
+            //     UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
+            //         // do something
+            //         header.classList.add('hoverMenu');
+            //     });
+            //     UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
+            //         // do something
+            //         header.classList.remove('hoverMenu');
+            //     });
+            // }
 
-                if (scrollTop > 0){
-                    UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
-                        // do something
-                        header.classList.add('hoverMenu');
-                    });
-                    UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
-                        // do something
-                        header.classList.remove('hoverMenu');
-                    });
-                }else {
-                    UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
-                        // do something
-                        header.classList.add('hoverMenu');
-                    });
-                    UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
-                        // do something
-                        header.classList.remove('hoverMenu');
-                    });
-                }
-            }
+            // document.onscroll = function () {
+            //     scrollTop = window.scrollY || document.documentElement.scrollTop;
+            //
+            //     if (scrollTop > 0){
+            //         UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
+            //             // do something
+            //             header.classList.add('hoverMenu');
+            //         });
+            //         UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
+            //             // do something
+            //             header.classList.remove('hoverMenu');
+            //         });
+            //     }else {
+            //         UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
+            //             // do something
+            //             header.classList.add('hoverMenu');
+            //         });
+            //         UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
+            //             // do something
+            //             header.classList.remove('hoverMenu');
+            //         });
+            //     }
+            // }
 
             if (uk_navbar_dropdown){
                 UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
@@ -143,15 +151,19 @@
             UIkit.util.on('.header__top__boxSearch', 'show', function () {
                 console.log('Show activeSearch');
                 header.classList.add('activeSearch');
-                header__top__boxSearch__input.autofocus;
-                if (header__top__boxSearch__input.autofocus){
-
-                }
+                html.style.overflowY = 'hidden';
+                html.style.touchAction = 'none';
+                html.style.paddingRight = 0;
+                body.style.touchAction = 'pan-y pinch-zoom';
             });
             if (btnClose_Search){
                 btnClose_Search.addEventListener('click',()=>{
                     console.log('Hide activeSearch');
                     header.classList.remove('activeSearch');
+                    html.style.removeProperty('overflow-y');
+                    html.style.removeProperty('touch-action');
+                    html.style.removeProperty('padding-right');
+                    body.style.removeProperty('touch-action');
                 })
             }
             // .End Xử lý khi click button search
@@ -164,7 +176,7 @@
 
 
     $(window).on("load", function (e) {
-        UIkit.util.on('.header__top__boxSearch', 'show', function () {
+        UIkit.util.on('.header__top__boxSearch,.uk-navbar-dropdown', 'show', function () {
             // do something
             $('.mask_menu').fadeIn(300);
         });
@@ -172,6 +184,11 @@
         $('.btnClose_Search').on('click',()=>{
             $('.mask_menu').stop(true, true).fadeOut(300);
         })
+
+        UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
+            // do something
+            $('.mask_menu').stop(true, true).fadeOut(300);
+        });
     });
 </script>
 </body>

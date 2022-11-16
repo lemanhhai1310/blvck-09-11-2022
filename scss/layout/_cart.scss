@@ -1,0 +1,164 @@
+.cart{
+  $space: 20px;
+  &__offcanvas{
+    &__bar{
+      $x:15px;
+      border-top-left-radius: #{$x};
+      border-top-right-radius: #{$x};
+      background: #ffffff;
+      padding: 0;
+      @include media-breakpoint-up('m'){
+        $w:500px;
+        margin: 15px;
+        border-bottom-left-radius: #{$x};
+        border-bottom-right-radius: #{$x};
+        width: #{$w};
+        .uk-offcanvas-flip &{
+          right: calc(0px - #{$w} - #{$x});
+        }
+      }
+      @include media-breakpoint-down('s'){
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        top: 100vh;
+        transition: top .5s ease-in-out;
+        transition-property: top !important;
+        .uk-open> &{
+          top: 15px;
+        }
+      }
+    }
+    &__dc{
+      padding: calc(#{$space} - 5px);
+      @include media-breakpoint-up('m'){
+        padding: #{$space};
+      }
+    }
+    &__header{
+      @extend .cart__offcanvas__dc;
+      border-bottom: 1px solid #e3e3e3;
+      position: relative;
+      color: #aaaaaa !important;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      box-sizing: border-box;
+      >*{
+        color: #aaaaaa !important;
+      }
+      &__title{
+        color: #aaaaaa !important;
+        @extend .fz-14;
+        margin: 0;
+        text-align: center;
+        font-family: $font-Montserrat-Bold;
+      }
+      &__close{
+        color: #aaaaaa !important;
+        svg{
+          transition: all .3s;
+        }
+        &:hover{
+          svg{
+            transform: rotate(-90deg);
+          }
+        }
+      }
+    }
+    &__body{
+      *,
+      >*{
+        color: #aaaaaa !important;
+      }
+      &__box1{
+        @extend .cart__offcanvas__dc;
+      }
+      &__box2{
+        @extend .cart__offcanvas__dc;
+        min-height: 300px;
+        background: #fafafa;
+        border-top: 1px solid #e3e3e3;
+      }
+      &__name{
+        color: #000 !important;
+        @extend .fz-14;
+        font-family: $font-AvenirNextLTPro-Bold;
+        line-height: (20/14);
+        a{
+          color: #000 !important;
+        }
+      }
+      &__size{
+        color: #aaaaaa;
+        @extend .fz-12;
+        font-family: $font-AvenirNextLTPro-Regular;
+        line-height: (16/12);
+      }
+      &__price{
+        @extend .fz-12;
+        font-family: $font-AvenirNextLTPro-Regular;
+        line-height: (16/12);
+        &:nth-child(n+2){
+          margin-left: 2px;
+        }
+        &--old{
+          color: #9a9a9a !important;
+        }
+        &--new{
+          color: #44BE70 !important;
+        }
+      }
+      &__item{
+        &:nth-child(n+2){
+          $x:15px;
+          margin-top: #{$x};
+          padding-top: #{$x};
+          @include media-breakpoint-up('m'){
+            $x:20px;
+            margin-top: #{$x};
+            padding-top: #{$x};
+          }
+          position: relative;
+          &:before{
+            border-top: 1px solid #e3e3e3;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: calc(0px - #{$space} + 5px);
+            @include media-breakpoint-up('m'){
+              right: calc(0px - #{$space});
+            }
+          }
+        }
+      }
+    }
+    &__footer{
+      @extend .cart__offcanvas__dc;
+      border-top: 1px solid #e3e3e3;
+      //min-height: 103px;
+      box-sizing: border-box;
+      >*{
+        color: #aaaaaa !important;
+      }
+      &__txt{
+        @extend .fz-16;
+        font-family: $font-AvenirNextLTPro-Bold;
+        color: #aaaaaa !important;
+        line-height: (22/16);
+      }
+      &__btn{
+        background: #000 !important;
+        color: #ffffff !important;
+        text-transform: inherit;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+        @extend .fz-16;
+        font-family: $font-AvenirNextLTPro-Regular;
+      }
+    }
+  }
+}

@@ -23,5 +23,7 @@
     <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
 </div>
+<div class="uk-height-viewport">
 
+</div>
 <?php require "template-parts/layouts/footer.php"; ?>
