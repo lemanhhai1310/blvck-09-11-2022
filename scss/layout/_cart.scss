@@ -65,6 +65,9 @@
         }
       }
     }
+    &__overflow{
+
+    }
     &__body{
       *,
       >*{
@@ -75,9 +78,30 @@
       }
       &__box2{
         @extend .cart__offcanvas__dc;
-        min-height: 300px;
         background: #fafafa;
         border-top: 1px solid #e3e3e3;
+        &__txt{
+          color: #aaaaaa !important;
+          @extend .fz-14;
+        }
+        &__btn{
+          @extend .fz-12;
+          background: #000 !important;
+          color: #ffffff !important;
+          font-family: $font-AvenirNextLTPro-Regular;
+          text-transform: initial;
+          min-width: 80px;
+        }
+        $max:20;
+        $min:15;
+        &__item-#{$max}-#{$min}{
+          &:nth-child(n+2){
+            margin-top: #{$min}px;
+            @include media-breakpoint-up('m'){
+              margin-top: #{$max}px;
+            }
+          }
+        }
       }
       &__name{
         color: #000 !important;
@@ -93,6 +117,50 @@
         @extend .fz-12;
         font-family: $font-AvenirNextLTPro-Regular;
         line-height: (16/12);
+      }
+      &__trash{
+        svg{
+          color: #999999 !important;
+        }
+        &:hover{
+          svg{
+            color: #666666 !important;
+          }
+        }
+      }
+      &__boxCount{
+        border: 1px solid #e3e3e3;
+        display: inline-flex;
+        >*{
+          min-width: 36px;
+          width: 36px;
+        }
+        .uk-input{
+          height: 24px !important;
+          box-sizing: border-box;
+          text-align: center;
+          border-style: solid;
+          border-width: 0 1px 0 1px;
+          border-color: #e3e3e3 !important;
+          @extend .fz-12;
+          font-family: $font-AvenirNextLTPro-Bold;
+          color: #aaaaaa !important;
+          padding: 0 !important;
+          width: 36px;
+        }
+        .uk-button{
+          width: 36px;
+          padding: 0 !important;
+          line-height: 22px;
+          color: #aaaaaa !important;
+          svg{
+            color: #aaaaaa !important;
+          }
+          &:hover{
+            background: #f2f2f2 !important;
+            border-color: #f2f2f2 !important;
+          }
+        }
       }
       &__price{
         @extend .fz-12;

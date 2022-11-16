@@ -874,16 +874,16 @@ body {
   }
 }
 
-.fz-12, .cart__offcanvas__body__price, .cart__offcanvas__body__size, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+.fz-12, .cart__offcanvas__body__price, .cart__offcanvas__body__boxCount .uk-input, .cart__offcanvas__body__size, .cart__offcanvas__body__box2__btn, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
   font-size: 12px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-12, .cart__offcanvas__body__price, .cart__offcanvas__body__size, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+  .fz-12, .cart__offcanvas__body__price, .cart__offcanvas__body__boxCount .uk-input, .cart__offcanvas__body__size, .cart__offcanvas__body__box2__btn, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
     font-size: calc(12px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-12, .cart__offcanvas__body__price, .cart__offcanvas__body__size, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+  .fz-12, .cart__offcanvas__body__price, .cart__offcanvas__body__boxCount .uk-input, .cart__offcanvas__body__size, .cart__offcanvas__body__box2__btn, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
     font-size: 12px !important;
   }
 }
@@ -902,16 +902,16 @@ body {
   }
 }
 
-.fz-14, .cart__offcanvas__body__name, .cart__offcanvas__header__title, .footer__title, .footer__accordion .uk-accordion-title {
+.fz-14, .cart__offcanvas__body__name, .cart__offcanvas__body__box2__txt, .cart__offcanvas__header__title, .footer__title, .footer__accordion .uk-accordion-title {
   font-size: 14px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-14, .cart__offcanvas__body__name, .cart__offcanvas__header__title, .footer__title, .footer__accordion .uk-accordion-title {
+  .fz-14, .cart__offcanvas__body__name, .cart__offcanvas__body__box2__txt, .cart__offcanvas__header__title, .footer__title, .footer__accordion .uk-accordion-title {
     font-size: calc(14px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-14, .cart__offcanvas__body__name, .cart__offcanvas__header__title, .footer__title, .footer__accordion .uk-accordion-title {
+  .fz-14, .cart__offcanvas__body__name, .cart__offcanvas__body__box2__txt, .cart__offcanvas__header__title, .footer__title, .footer__accordion .uk-accordion-title {
     font-size: 14px !important;
   }
 }
@@ -1035,6 +1035,9 @@ body {
   overflow: hidden;
 }
 
+.item__20:nth-child(n+2) {
+  margin-top: 20px;
+}
 .item__15:nth-child(n+2) {
   margin-top: 15px;
 }
@@ -1309,9 +1312,26 @@ body {
   color: #aaaaaa !important;
 }
 .cart__offcanvas__body__box2 {
-  min-height: 300px;
   background: #fafafa;
   border-top: 1px solid #e3e3e3;
+}
+.cart__offcanvas__body__box2__txt {
+  color: #aaaaaa !important;
+}
+.cart__offcanvas__body__box2__btn {
+  background: #000 !important;
+  color: #ffffff !important;
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
+  text-transform: initial;
+  min-width: 80px;
+}
+.cart__offcanvas__body__box2__item-20-15:nth-child(n+2) {
+  margin-top: 15px;
+}
+@media (min-width: 960px) {
+  .cart__offcanvas__body__box2__item-20-15:nth-child(n+2) {
+    margin-top: 20px;
+  }
 }
 .cart__offcanvas__body__name {
   color: #000 !important;
@@ -1325,6 +1345,45 @@ body {
   color: #aaaaaa;
   font-family: "Avenir Next LT Pro Regular", sans-serif;
   line-height: 1.3333333333;
+}
+.cart__offcanvas__body__trash svg {
+  color: #999999 !important;
+}
+.cart__offcanvas__body__trash:hover svg {
+  color: #666666 !important;
+}
+.cart__offcanvas__body__boxCount {
+  border: 1px solid #e3e3e3;
+  display: inline-flex;
+}
+.cart__offcanvas__body__boxCount > * {
+  min-width: 36px;
+  width: 36px;
+}
+.cart__offcanvas__body__boxCount .uk-input {
+  height: 24px !important;
+  box-sizing: border-box;
+  text-align: center;
+  border-style: solid;
+  border-width: 0 1px 0 1px;
+  border-color: #e3e3e3 !important;
+  font-family: "Avenir Next LT Pro Bold", sans-serif;
+  color: #aaaaaa !important;
+  padding: 0 !important;
+  width: 36px;
+}
+.cart__offcanvas__body__boxCount .uk-button {
+  width: 36px;
+  padding: 0 !important;
+  line-height: 22px;
+  color: #aaaaaa !important;
+}
+.cart__offcanvas__body__boxCount .uk-button svg {
+  color: #aaaaaa !important;
+}
+.cart__offcanvas__body__boxCount .uk-button:hover {
+  background: #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
 }
 .cart__offcanvas__body__price {
   font-family: "Avenir Next LT Pro Regular", sans-serif;
