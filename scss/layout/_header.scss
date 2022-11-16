@@ -29,6 +29,8 @@
       }
       .uk-search-input{
         color: #ffffff;
+        @extend .fz-16;
+        font-family: $font-AvenirNextLTPro-Regular;
         &::placeholder{
           color: #ffffff;
         }

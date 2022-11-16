@@ -82,7 +82,7 @@
 
             // Cart
             if (cart__offcanvas){
-                UIkit.offcanvas(cart__offcanvas).show();
+                // UIkit.offcanvas(cart__offcanvas).show();
             }
             // End Cart
 
