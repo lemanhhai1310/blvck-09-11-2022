@@ -79,12 +79,12 @@
             const html = x('html');
             const body = x('body');
             const cart__offcanvas = x('.cart__offcanvas');
-            const uk_sticky_placeholder = x('.uk-sticky-placeholder');
             const header__top = x('.header__top');
             const headerTransparent = x('.headerTransparent');
+            const mask_menu = x('.mask_menu');
 
             if (headerTransparent){
-                uk_sticky_placeholder.parentNode.removeChild(uk_sticky_placeholder);
+
             }
 
             // Cart
@@ -128,8 +128,10 @@
                 html.style.touchAction = 'none';
                 html.style.paddingRight = 0;
                 body.style.touchAction = 'pan-y pinch-zoom';
+                const uk_sticky_placeholder = x('.uk-sticky-placeholder');
                 if (uk_sticky_placeholder){
                     uk_sticky_placeholder.style.height = header__top.offsetHeight + 'px';
+                    console.log('uk_sticky_placeholder',header__top.offsetHeight);
                 }
             });
             if (btnClose_Search){
@@ -140,7 +142,9 @@
                     html.style.removeProperty('touch-action');
                     html.style.removeProperty('padding-right');
                     body.style.removeProperty('touch-action');
+                    const uk_sticky_placeholder = x('.uk-sticky-placeholder');
                     uk_sticky_placeholder.style.height = header.offsetHeight + 'px';
+                    console.log('uk_sticky_placeholder',header.offsetHeight);
                 })
             }
             // .End Xử lý khi click button search
@@ -151,6 +155,7 @@
     }
 
     window.addEventListener("load", ()=>{
+        console.log("page is fully loaded");
         app.start();
     })
 
