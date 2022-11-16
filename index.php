@@ -128,10 +128,10 @@
                 <div class="uk-cover-container uk-background-muted">
                     <img src="<?= $v['img'] ?>" alt="" uk-cover="">
                     <canvas width="573" height="573"></canvas>
-                    <a href="" class="uk-position-cover"></a>
+                    <a href="blog-detail.php" class="uk-position-cover"></a>
                 </div>
                 <div class="uk-padding-small home__blog__box">
-                    <h4 class="uk-h4 home__blog__title"><a href="" class="uk-link-toggle"><?= $v['title'] ?></a></h4>
+                    <h4 class="uk-h4 home__blog__title"><a href="blog-detail.php" class="uk-link-toggle"><?= $v['title'] ?></a></h4>
                     <div class="home__blog__desc item__15"><?= $v['desc'] ?></div>
                 </div>
             </div>

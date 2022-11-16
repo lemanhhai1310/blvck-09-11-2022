@@ -98,13 +98,13 @@
                     <img src="<?= $v['img'] ?>?v=<?= $k ?>" alt="" uk-cover="">
                     <canvas width="573" height="573"></canvas>
                     <span class="uk-position-small uk-position-bottom-left blog__tag">WEB3</span>
-                    <a href="" class="uk-position-cover"></a>
+                    <a href="blog-detail.php" class="uk-position-cover"></a>
                 </div>
                 <div class="uk-padding-small home__blog__box">
-                    <h4 class="uk-h4 home__blog__title"><a href="" class="uk-link-toggle"><?= $v['title'] ?></a></h4>
+                    <h4 class="uk-h4 home__blog__title"><a href="blog-detail.php" class="uk-link-toggle"><?= $v['title'] ?></a></h4>
                     <div class="item__6"><time class="blog__time">October 03, 2022</time></div>
                     <div class="home__blog__desc item__15"><?= $v['desc'] ?></div>
-                    <div class="item__15"><a href="" class="blog__link uk-link-toggle">READ MORE</a></div>
+                    <div class="item__15"><a href="blog-detail.php" class="blog__link uk-link-toggle">READ MORE</a></div>
                 </div>
             </div>
         </div>
