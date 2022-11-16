@@ -22,7 +22,7 @@
                     <?php require "template-parts/footer/widget_social.php"; ?>
                 </div>
             </div>
-            <ul class="footer__accordion uk-hidden@m" uk-accordion>
+            <ul class="footer__accordion uk-hidden@m" uk-accordion="multiple: true">
                 <li>
                     <a class="uk-accordion-title" href="#">COLLECTIONS</a>
                     <div class="uk-accordion-content">
@@ -86,30 +86,9 @@
             }
             // End Cart
 
-            // let scrollTop = window.scrollY || document.documentElement.scrollTop;
-            //
-            // if (scrollTop > 0){
-            //     UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
-            //         // do something
-            //         header.classList.add('hoverMenu');
-            //     });
-            //     UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
-            //         // do something
-            //         header.classList.remove('hoverMenu');
-            //     });
-            // }else {
-            //     UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
-            //         // do something
-            //         header.classList.add('hoverMenu');
-            //     });
-            //     UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
-            //         // do something
-            //         header.classList.remove('hoverMenu');
-            //     });
-            // }
-
+            // Xử lý lỗi sticky
             document.onscroll = function () {
-                scrollTop = window.scrollY || document.documentElement.scrollTop;
+                let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
                 if (scrollTop > 0){
                     header.classList.add('uk-active');
@@ -117,6 +96,7 @@
                     header.classList.remove('uk-active');
                 }
             }
+            // End Xử lý lỗi sticky
 
             if (uk_navbar_dropdown){
                 UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
