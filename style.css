@@ -881,16 +881,16 @@ body {
   }
 }
 
-.fz-12, .blog__link, .blog__time, .home__slideshow__btn, .cart__offcanvas__body__price, .cart__offcanvas__body__boxCount .uk-input, .cart__offcanvas__body__size, .cart__offcanvas__body__box2__btn, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+.fz-12, .blog__link, .blog__tag, .blog__time, .home__slideshow__btn, .cart__offcanvas__body__price, .cart__offcanvas__body__boxCount .uk-input, .cart__offcanvas__body__size, .cart__offcanvas__body__box2__btn, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
   font-size: 12px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-12, .blog__link, .blog__time, .home__slideshow__btn, .cart__offcanvas__body__price, .cart__offcanvas__body__boxCount .uk-input, .cart__offcanvas__body__size, .cart__offcanvas__body__box2__btn, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+  .fz-12, .blog__link, .blog__tag, .blog__time, .home__slideshow__btn, .cart__offcanvas__body__price, .cart__offcanvas__body__boxCount .uk-input, .cart__offcanvas__body__size, .cart__offcanvas__body__box2__btn, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
     font-size: calc(12px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-12, .blog__link, .blog__time, .home__slideshow__btn, .cart__offcanvas__body__price, .cart__offcanvas__body__boxCount .uk-input, .cart__offcanvas__body__size, .cart__offcanvas__body__box2__btn, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+  .fz-12, .blog__link, .blog__tag, .blog__time, .home__slideshow__btn, .cart__offcanvas__body__price, .cart__offcanvas__body__boxCount .uk-input, .cart__offcanvas__body__size, .cart__offcanvas__body__box2__btn, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
     font-size: 12px !important;
   }
 }
@@ -1607,6 +1607,13 @@ body {
   line-height: 1.3333333333;
   color: rgb(100, 100, 100);
   font-family: "Montserrat Regular", sans-serif;
+}
+.blog__tag {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  letter-spacing: 1.44px;
+  padding: 3px 8px;
+  line-height: 1;
 }
 .blog__link {
   color: rgb(33, 33, 33);

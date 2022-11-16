@@ -97,6 +97,7 @@
                 <div class="uk-cover-container uk-background-muted">
                     <img src="<?= $v['img'] ?>?v=<?= $k ?>" alt="" uk-cover="">
                     <canvas width="573" height="573"></canvas>
+                    <span class="uk-position-small uk-position-bottom-left blog__tag">WEB3</span>
                     <a href="" class="uk-position-cover"></a>
                 </div>
                 <div class="uk-padding-small home__blog__box">
