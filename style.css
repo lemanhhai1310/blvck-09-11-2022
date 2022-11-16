@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
 }
 
 /**
@@ -8,9 +8,16 @@ body {
  * --------------------------------------------------------------------
  */
 @font-face {
-  font-family: "Avenir Next";
+  font-family: "Avenir Next LT Pro Regular";
   font-display: swap;
-  src: local("Avenir Next"), url("fonts/Avenir-Next.ttc") format("truetype");
+  src: local("Avenir Next LT Pro Regular"), url("fonts/Avenir_Next_Pro_Full/AvenirNextLTPro-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro Medium";
+  font-display: swap;
+  src: local("Avenir Next LT Pro Medium"), url("fonts/Avenir_Next_Pro_Full/AvenirNextLTPro-Medium.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -786,59 +793,115 @@ body {
   margin-top: 50px;
 }
 
-.fz-14 {
-  font-size: 12.25px !important;
+.fz-10, .footer__moneySelect {
+  font-size: 10px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-14 {
-    font-size: calc(12.25px + 0 * ((100vw - 640px) / 560)) !important;
+  .fz-10, .footer__moneySelect {
+    font-size: calc(10px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-14 {
-    font-size: 12.25px !important;
+  .fz-10, .footer__moneySelect {
+    font-size: 10px !important;
   }
 }
 
-.fz-15 {
-  font-size: 13.125px !important;
+.fz-11 {
+  font-size: 11px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-15 {
-    font-size: calc(13.125px + 0 * ((100vw - 640px) / 560)) !important;
+  .fz-11 {
+    font-size: calc(11px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-15 {
-    font-size: 13.125px !important;
+  .fz-11 {
+    font-size: 11px !important;
   }
 }
 
-.fz-16 {
+.fz-12, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+  font-size: 12px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-12, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+    font-size: calc(12px + 0 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-12, .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-navbar-dropdown-nav > li > a {
+    font-size: 12px !important;
+  }
+}
+
+.fz-13 {
+  font-size: 13px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-13 {
+    font-size: calc(13px + 0 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-13 {
+    font-size: 13px !important;
+  }
+}
+
+.fz-14, .footer__title, .footer__accordion .uk-accordion-title {
   font-size: 14px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-16 {
+  .fz-14, .footer__title, .footer__accordion .uk-accordion-title {
     font-size: calc(14px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-16 {
+  .fz-14, .footer__title, .footer__accordion .uk-accordion-title {
     font-size: 14px !important;
   }
 }
 
+.fz-15 {
+  font-size: 15px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-15 {
+    font-size: calc(15px + 0 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-15 {
+    font-size: 15px !important;
+  }
+}
+
+.fz-16, .footer__navList > li > a, .footer__label {
+  font-size: 16px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-16, .footer__navList > li > a, .footer__label {
+    font-size: calc(16px + 0 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-16, .footer__navList > li > a, .footer__label {
+    font-size: 16px !important;
+  }
+}
+
 .fz-20 {
-  font-size: 15.75px !important;
+  font-size: 16px !important;
 }
 @media screen and (min-width: 640px) {
   .fz-20 {
-    font-size: calc(15.75px + 1.75 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(16px + 4 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-20 {
-    font-size: 17.5px !important;
+    font-size: 20px !important;
   }
 }
 
@@ -847,12 +910,12 @@ body {
 }
 @media screen and (min-width: 640px) {
   .fz-30 {
-    font-size: calc(21px + 5.25 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(21px + 9 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-30 {
-    font-size: 26.25px !important;
+    font-size: 30px !important;
   }
 }
 
@@ -891,79 +954,6 @@ body {
   overflow: hidden;
 }
 
-.item__120:nth-child(n+2) {
-  margin-top: 120px;
-}
-.item__100:nth-child(n+2) {
-  margin-top: 100px;
-}
-.home__hesinhthai__section .item__100:nth-child(n+2) {
-  margin-top: 40px;
-}
-@media (min-width: 960px) {
-  .home__hesinhthai__section .item__100:nth-child(n+2) {
-    margin-top: 100px;
-  }
-}
-.item__80:nth-child(n+2) {
-  margin-top: 80px;
-}
-.item__60:nth-child(n+2) {
-  margin-top: 60px;
-}
-.home__hesinhthai__section .item__60:nth-child(n+2), .home__quyenloi .item__60:nth-child(n+2) {
-  margin-top: 30px;
-}
-@media (min-width: 960px) {
-  .home__hesinhthai__section .item__60:nth-child(n+2), .home__quyenloi .item__60:nth-child(n+2) {
-    margin-top: 60px;
-  }
-}
-.item__50:nth-child(n+2) {
-  margin-top: 50px;
-}
-.item__43:nth-child(n+2) {
-  margin-top: 43px;
-}
-.home__tinhnang .item__43:nth-child(n+2) {
-  margin-top: 20px;
-}
-@media (min-width: 960px) {
-  .home__tinhnang .item__43:nth-child(n+2) {
-    margin-top: 43px;
-  }
-}
-.item__40:nth-child(n+2) {
-  margin-top: 40px;
-}
-.item__30:nth-child(n+2) {
-  margin-top: 30px;
-}
-.footer__top .item__30:nth-child(n+2), .home__banner .item__30:nth-child(n+2), .home__hinhanh .item__30:nth-child(n+2), .home__tinhnang .item__30:nth-child(n+2) {
-  margin-top: 16px;
-}
-@media (min-width: 960px) {
-  .footer__top .item__30:nth-child(n+2), .home__banner .item__30:nth-child(n+2), .home__hinhanh .item__30:nth-child(n+2), .home__tinhnang .item__30:nth-child(n+2) {
-    margin-top: 30px;
-  }
-}
-.item__24:nth-child(n+2) {
-  margin-top: 24px;
-}
-.home__quyenloi .item__24:nth-child(n+2) {
-  margin-top: 10px;
-}
-@media (min-width: 960px) {
-  .home__quyenloi .item__24:nth-child(n+2) {
-    margin-top: 24px;
-  }
-}
-.item__20:nth-child(n+2) {
-  margin-top: 20px;
-}
-.item__16:nth-child(n+2) {
-  margin-top: 16px;
-}
 .item__15:nth-child(n+2) {
   margin-top: 15px;
 }
@@ -975,27 +965,83 @@ body {
 }
 
 .header {
+  z-index: 982;
   width: 100% !important;
 }
 .header ~ .uk-sticky-placeholder {
   display: none !important;
 }
-.header.hoverMenu, .header.uk-active {
+.header.activeSearch, .header.hoverMenu, .header.uk-sticky-below {
   background: #000;
   top: 0 !important;
 }
-.hoverMenu .header__bottom, .uk-sticky.uk-active .header__bottom {
+.header__dc, .header__bottom, .header {
+  transition: all 0.3s ease;
+}
+.header__top .uk-navbar-center,
+.header__top .uk-navbar-left,
+.header__top .uk-navbar-right {
+  gap: 20px;
+}
+@media (min-width: 960px) {
+  .header__top .uk-navbar-center,
+.header__top .uk-navbar-left,
+.header__top .uk-navbar-right {
+    gap: 30px;
+  }
+}
+.header__top__boxSearch .uk-search-input {
+  color: #ffffff;
+}
+.header__top__boxSearch .uk-search-input::placeholder {
+  color: #ffffff;
+}
+.header__top .uk-navbar-item, .header__top .uk-navbar-toggle {
+  min-height: 70px;
+}
+@media (min-width: 960px) {
+  .header__top .uk-navbar-item, .header__top .uk-navbar-toggle {
+    min-height: 80px;
+  }
+}
+.header__top .uk-logo img {
+  height: 30px;
+}
+.activeSearch .header__bottom {
+  display: none;
+}
+.hoverMenu .header__bottom, .uk-sticky-below .header__bottom {
   border-top: 1px solid rgb(47, 47, 47);
 }
 .header__bottom .uk-navbar-dropdown {
   background: #000;
   border-top: 1px solid rgb(47, 47, 47);
 }
+.header__bottom .uk-navbar-dropdown-nav > li {
+  opacity: 0;
+  transition: none;
+}
+.header__bottom .uk-navbar-dropdown-nav > li.title {
+  margin-bottom: 20px;
+}
+.header__bottom .uk-navbar-dropdown-nav > li.title > a {
+  font-family: "Avenir Next LT Pro Medium", sans-serif;
+  color: #ffffff;
+}
+.header__bottom .uk-navbar-dropdown-nav > li > a {
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
+  letter-spacing: 1.1px;
+}
+.hoverMenu .header__bottom .uk-navbar-dropdown-nav > li {
+  transition-delay: 150ms;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.35s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
 .header__bottom .uk-navbar-nav > li > a {
   min-height: 45px;
-  font-family: "Avenir Next", sans-serif;
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
   color: #ffffff;
-  font-size: 12px;
   letter-spacing: 1.1px;
   position: relative;
 }
@@ -1013,6 +1059,79 @@ body {
   background-color: var(---color-menu-link-hover);
   transform: scaleX(0);
   transition: transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.mask_menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 981;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.footer {
+  background: #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (min-width: 960px) {
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+.footer__label {
+  color: #ffffff;
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
+}
+.footer__title, .footer__accordion .uk-accordion-title {
+  color: #ffffff;
+  margin-bottom: 17px !important;
+}
+.footer__navList > li > a {
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
+}
+.footer__moneySelect {
+  text-transform: inherit;
+  color: #ffffff;
+  padding: 0 15px;
+}
+.footer__accordion .uk-accordion-title {
+  margin-bottom: 0 !important;
+}
+.footer__accordion .uk-accordion-content {
+  margin-top: 10px;
+}
+.footer__accordion > li:nth-child(n+2) {
+  position: relative;
+  margin-top: 12px;
+  padding-top: 12px;
+}
+.footer__accordion > li:nth-child(n+2):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -15px;
+  border-top: 1px solid #999999;
+}
+.footer__item-75-25:nth-child(n+2) {
+  margin-top: 25px;
+}
+@media (min-width: 960px) {
+  .footer__item-75-25:nth-child(n+2) {
+    margin-top: 75px;
+  }
+}
+.footer__item-100-20:nth-child(n+2) {
+  margin-top: 20px;
+}
+@media (min-width: 960px) {
+  .footer__item-100-20:nth-child(n+2) {
+    margin-top: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

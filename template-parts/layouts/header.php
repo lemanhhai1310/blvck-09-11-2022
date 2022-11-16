@@ -19,46 +19,73 @@
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </head>
 <body class="<?= (isset($bodyClass))?$bodyClass:'' ?>">
-<?php require "template-parts/commons/facebook_chat.php"; ?>
+<?php //require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<!--Cart-->
+<div id="offcanvas-flip-cart" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    </div>
+</div>
+<!--/Cart-->
+
+<!--Menu-mobile-->
+<div id="offcanvas-overlay-menu" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    </div>
+</div>
+<!--/Menu-mobile-->
+
 <header id="header" class="header uk-position-top uk-position-z-index uk-position-fixed" uk-sticky>
     <div class="header__top">
         <div class="uk-container uk-container-expand">
             <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <div class="nav-overlay uk-navbar-left">
-                    <div class="uk-navbar-item uk-light">
-                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="instagram"></a>
-                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="pinterest"></a>
-                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="facebook"></a>
-                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="twitter"></a>
-                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="youtube"></a>
-                        <a href="#" class="uk-icon-link" uk-icon="tiktok"></a>
+                <div class="nav-overlay uk-navbar-left uk-light">
+                    <div class="uk-navbar-item uk-visible@m">
+                        <?php require "template-parts/layouts/social.php"; ?>
                     </div>
+                    <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas-overlay-menu" uk-toggle=""></a>
+                    <a class="uk-navbar-toggle uk-hidden@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
                 </div>
                 <div class="nav-overlay uk-navbar-center">
                     <a href="" class="uk-navbar-item uk-logo"><img src="images/Blvck_Paris_White_110x.png.webp" alt=""></a>
                 </div>
                 <div class="nav-overlay uk-navbar-right uk-light">
                     <a class="uk-navbar-toggle" uk-icon="icon: user" href=""></a>
-                    <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
-                    <a class="uk-navbar-toggle" uk-icon="icon: cart" href=""></a>
+                    <a class="uk-navbar-toggle uk-visible@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+                    <div class="uk-navbar-item">
+                        <a class="uk-position-relative" uk-icon="icon: cart" href="#offcanvas-flip-cart" uk-toggle="">
+                            <span class="uk-badge uk-position-top-right" style="transform: translate(50%, -50%);">1</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
-
+                <div class="header__top__boxSearch nav-overlay uk-navbar-left uk-flex-1" hidden>
                     <div class="uk-navbar-item uk-width-expand">
                         <form class="uk-search uk-search-navbar uk-width-1-1">
-                            <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
+                            <input class="header__top__boxSearch__input uk-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
                         </form>
                     </div>
-
-                    <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
-
+                    <a class="uk-navbar-toggle btnClose_Search" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
                 </div>
             </nav>
         </div>
     </div>
-    <nav class="header__bottom uk-flex-center uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <nav class="header__bottom uk-visible@m uk-flex-center uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
         <div class="uk-navbar-left uk-light">
             <ul class="uk-navbar-nav">
                 <li>
@@ -70,24 +97,22 @@
                                     <div class="uk-child-width-1-2" uk-grid>
                                         <div>
                                             <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li class="uk-active"><a href="#">Active</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-header">Header</li>
-                                                <li><a href="#">Item</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-divider"></li>
-                                                <li><a href="#">Item</a></li>
+                                                <li class="title"><a href="#">READY-TO-WEAR</a></li>
+                                                <li><a href="#">NEW ARRIVALS</a></li>
+                                                <li><a href="#">TEES</a></li>
+                                                <li><a href="#">HOODIES & SWEATERS</a></li>
+                                                <li><a href="#">PANTS</a></li>
+                                                <li><a href="#">OUTERWEAR</a></li>
                                             </ul>
                                         </div>
                                         <div>
                                             <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li class="uk-active"><a href="#">Active</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-header">Header</li>
-                                                <li><a href="#">Item</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-divider"></li>
-                                                <li><a href="#">Item</a></li>
+                                                <li class="title"><a href="#">ACCESSORIES</a></li>
+                                                <li><a href="#">NEW ARRIVALS</a></li>
+                                                <li><a href="#">BAGS & LEATHER</a></li>
+                                                <li><a href="#">HIGH-TECH</a></li>
+                                                <li><a href="#">LIFESTYLE</a></li>
+                                                <li><a href="#">HEADWARE</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -120,3 +145,4 @@
         </div>
     </nav>
 </header>
+<div class="uk-overlay uk-overlay-primary mask_menu"></div>

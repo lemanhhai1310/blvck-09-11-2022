@@ -1,33 +1,98 @@
 .header{
+  z-index: 982;
   width: 100% !important;
+  @extend .header__dc;
   & ~ .uk-sticky-placeholder{
     display: none !important;
   }
+  &.activeSearch,
   &.hoverMenu,
-  &.uk-active{
+  &.uk-sticky-below{
     background: #000;
     top: 0 !important;
-    //border-bottom: 1px solid rgb(47,47,47);
+  }
+  &__dc{
+    transition: all .3s ease;
   }
   &__top{
+    .uk-navbar-center,
+    .uk-navbar-left,
+    .uk-navbar-right{
+      gap: 20px;
+      @include media-breakpoint-up('m'){
+        gap: 30px;
+      }
+    }
+    &__boxSearch{
+      &__input{
 
+      }
+      .uk-search-input{
+        color: #ffffff;
+        &::placeholder{
+          color: #ffffff;
+        }
+      }
+    }
+    .uk-navbar-item,.uk-navbar-toggle{
+      min-height: 70px;
+      @include media-breakpoint-up('m'){
+        min-height: 80px;
+      }
+    }
+    .uk-logo{
+      img{
+        height: 30px;
+        @include media-breakpoint-up('m'){
+          //height: inherit;
+        }
+      }
+    }
   }
   &__bottom{
+    @extend .header__dc;
+    .activeSearch &{
+      display: none;
+    }
     .hoverMenu &,
-    .uk-sticky.uk-active &{
+    .uk-sticky-below &{
       border-top: 1px solid rgb(47,47,47);
     }
     .uk-navbar-dropdown{
       background: #000;
       border-top: 1px solid rgb(47,47,47);
     }
+    .uk-navbar-dropdown-nav{
+      >li{
+        &.title{
+          margin-bottom: 20px;
+          >a{
+            font-family: $font-AvenirNextLTPro-Medium;
+            color: #ffffff;
+          }
+        }
+        >a{
+          @extend .fz-12;
+          font-family: $font-AvenirNextLTPro-Regular;
+          letter-spacing: 1.1px;
+        }
+        opacity: 0;
+        transition: none;
+        .hoverMenu &{
+          transition-delay: 150ms;
+          opacity: 1;
+          transform: translateY(0);
+          transition: transform .15s cubic-bezier(.215,.61,.355,1),opacity .35s cubic-bezier(.215,.61,.355,1),color .25s cubic-bezier(.215,.61,.355,1);
+        }
+      }
+    }
     .uk-navbar-nav{
       >li{
         >a{
           min-height: 45px;
-          font-family: $font-Avenir-Next;
+          font-family: $font-AvenirNextLTPro-Regular;
           color: #ffffff;
-          font-size: 12px;
+          @extend .fz-12;
           letter-spacing: 1.1px;
           position: relative;
           &[aria-expanded="false"]{
@@ -58,4 +123,13 @@
       }
     }
   }
+}
+.mask_menu{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 981;
+  left: 0;
+  top: 0;
+  display: none;
 }

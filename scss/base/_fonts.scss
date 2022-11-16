@@ -4,9 +4,16 @@
  * --------------------------------------------------------------------
  */
 @font-face{
-  font-family:'Avenir Next';
+  font-family:'Avenir Next LT Pro Regular';
   font-display: swap;
-  src:local('Avenir Next'), url('fonts/Avenir-Next.ttc') format('truetype');
+  src:local('Avenir Next LT Pro Regular'), url('fonts/Avenir_Next_Pro_Full/AvenirNextLTPro-Regular.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Avenir Next LT Pro Medium';
+  font-display: swap;
+  src:local('Avenir Next LT Pro Medium'), url('fonts/Avenir_Next_Pro_Full/AvenirNextLTPro-Medium.otf') format('truetype');
   font-weight:normal;
   font-style:normal;
 }
