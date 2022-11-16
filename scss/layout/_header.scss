@@ -1,6 +1,9 @@
 .header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 982;
-  //width: 100% !important;
   @extend .header__dc;
   & ~ .uk-sticky-placeholder{
     display: none !important;
@@ -9,7 +12,6 @@
   &.hoverMenu,
   &.uk-active{
     background: #000;
-    //top: 0 !important;
   }
   &__dc{
     transition: all .3s ease;
