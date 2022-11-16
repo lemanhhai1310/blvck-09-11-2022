@@ -194,7 +194,7 @@
 <!--/Menu-mobile-->
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
-<header id="header" class="header" uk-sticky="end: !#app">
+<header id="header" class="header" uk-sticky="end: !#app; position: top;">
     <div class="header__top">
         <div class="uk-container uk-container-expand">
             <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>

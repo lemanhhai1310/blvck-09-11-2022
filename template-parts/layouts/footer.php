@@ -108,29 +108,15 @@
             //     });
             // }
 
-            // document.onscroll = function () {
-            //     scrollTop = window.scrollY || document.documentElement.scrollTop;
-            //
-            //     if (scrollTop > 0){
-            //         UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
-            //             // do something
-            //             header.classList.add('hoverMenu');
-            //         });
-            //         UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
-            //             // do something
-            //             header.classList.remove('hoverMenu');
-            //         });
-            //     }else {
-            //         UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
-            //             // do something
-            //             header.classList.add('hoverMenu');
-            //         });
-            //         UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
-            //             // do something
-            //             header.classList.remove('hoverMenu');
-            //         });
-            //     }
-            // }
+            document.onscroll = function () {
+                scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+                if (scrollTop > 0){
+                    header.classList.add('uk-active');
+                }else {
+                    header.classList.remove('uk-active');
+                }
+            }
 
             if (uk_navbar_dropdown){
                 UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
