@@ -80,6 +80,12 @@
             const body = x('body');
             const cart__offcanvas = x('.cart__offcanvas');
             const uk_sticky_placeholder = x('.uk-sticky-placeholder');
+            const header__top = x('.header__top');
+            const headerTransparent = x('.headerTransparent');
+
+            if (headerTransparent){
+                uk_sticky_placeholder.parentNode.removeChild(uk_sticky_placeholder);
+            }
 
             // Cart
             if (cart__offcanvas){
@@ -123,7 +129,7 @@
                 html.style.paddingRight = 0;
                 body.style.touchAction = 'pan-y pinch-zoom';
                 if (uk_sticky_placeholder){
-                    uk_sticky_placeholder.style.height = header.offsetHeight + 'px';
+                    uk_sticky_placeholder.style.height = header__top.offsetHeight + 'px';
                 }
             });
             if (btnClose_Search){
@@ -134,9 +140,7 @@
                     html.style.removeProperty('touch-action');
                     html.style.removeProperty('padding-right');
                     body.style.removeProperty('touch-action');
-                    if (uk_sticky_placeholder){
-                        uk_sticky_placeholder.style.height = header.offsetHeight + 'px';
-                    }
+                    uk_sticky_placeholder.style.height = header.offsetHeight + 'px';
                 })
             }
             // .End Xử lý khi click button search
@@ -145,7 +149,10 @@
             this.render();
         }
     }
-    app.start();
+
+    window.addEventListener("load", ()=>{
+        app.start();
+    })
 
 
     $(window).on("load", function (e) {

@@ -1075,10 +1075,6 @@ body {
   left: 0;
   right: 0;
 }
-.headerTransparent ~ .uk-sticky-placeholder {
-  display: none !important;
-}
-
 .notTransparent {
   background: #000;
   position: fixed;
