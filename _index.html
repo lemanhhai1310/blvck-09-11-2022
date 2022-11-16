@@ -1,10 +1,674 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Home - Blvck EMEA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1668596756">
 
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1668596756"></script>
+</head>
+<body class="">
+<!--Cart-->
+<div id="offcanvas-flip-cart" class="cart__offcanvas" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar cart__offcanvas__bar uk-flex uk-flex-column">
+        <div class="cart__offcanvas__header">
+            <h3 class="cart__offcanvas__header__title">YOUR CART</h3>
+            <button class="uk-offcanvas-close cart__offcanvas__header__close uk-position-center-right uk-position-small" type="button" uk-close></button>
+        </div>
+        <div class="cart__offcanvas__body uk-flex-auto uk-overflow-auto cart__offcanvas__overflow">
+            <div class="cart__offcanvas__body__box1">
+                <div class="cart__offcanvas__body__item">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <div class="uk-cover-container">
+                                <img src="images/0002_240x240.jpg" alt="" uk-cover="">
+                                <canvas width="90" height="90"></canvas>
+                                <a href="" class="uk-position-cover"></a>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-h4 cart__offcanvas__body__name"><a href="">Bold Hoodie</a></h4>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <a class="cart__offcanvas__body__trash" href="" uk-icon="icon: trash"></a>
+                                </div>
+                            </div>
+                            <div class="cart__offcanvas__body__size">M</div>
+                            <div class="item__10" uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="cart__offcanvas__body__boxCount">
+                                        <a href="" class="uk-button uk-button-small uk-button-default" uk-icon="icon: minus; ratio: .6"></a>
+                                        <input type="text" class="uk-input uk-form-small uk-form-width-xsmall" value="1" placeholder="">
+                                        <a href="" class="uk-button uk-button-small uk-button-default" uk-icon="icon: plus; ratio: .6"></a>
+                                    </div>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <span class="cart__offcanvas__body__price cart__offcanvas__body__price--new">326.700.000 ₫</span>
+                                    <del class="cart__offcanvas__body__price cart__offcanvas__body__price--old">4.064.000 ₫</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__offcanvas__body__item">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <div class="uk-cover-container">
+                                <img src="images/0002_240x240.jpg" alt="" uk-cover="">
+                                <canvas width="90" height="90"></canvas>
+                                <a href="" class="uk-position-cover"></a>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-h4 cart__offcanvas__body__name"><a href="">Bold Hoodie</a></h4>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <a class="cart__offcanvas__body__trash" href="" uk-icon="icon: trash"></a>
+                                </div>
+                            </div>
+                            <div class="cart__offcanvas__body__size">2XL</div>
+                            <div class="item__10" uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="cart__offcanvas__body__boxCount">
+                                        <a href="" class="uk-button uk-button-small uk-button-default" uk-icon="icon: minus; ratio: .6"></a>
+                                        <input type="text" class="uk-input uk-form-small uk-form-width-xsmall" value="1" placeholder="">
+                                        <a href="" class="uk-button uk-button-small uk-button-default" uk-icon="icon: plus; ratio: .6"></a>
+                                    </div>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <span class="cart__offcanvas__body__price cart__offcanvas__body__price--new">326.700.000 ₫</span>
+                                    <del class="cart__offcanvas__body__price cart__offcanvas__body__price--old">4.064.000 ₫</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__offcanvas__body__item">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <div class="uk-cover-container">
+                                <img src="images/0002_240x240.jpg" alt="" uk-cover="">
+                                <canvas width="90" height="90"></canvas>
+                                <a href="" class="uk-position-cover"></a>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-h4 cart__offcanvas__body__name"><a href="">Bold Hoodie</a></h4>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <div uk-spinner="ratio: .6"></div>
+                                </div>
+                            </div>
+                            <div class="cart__offcanvas__body__size">XL</div>
+                            <div class="item__10" uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="cart__offcanvas__body__boxCount">
+                                        <a href="" class="uk-button uk-button-small uk-button-default" uk-icon="icon: minus; ratio: .6"></a>
+                                        <input type="text" class="uk-input uk-form-small uk-form-width-xsmall" value="1" placeholder="">
+                                        <a href="" class="uk-button uk-button-small uk-button-default" uk-icon="icon: plus; ratio: .6"></a>
+                                    </div>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <span class="cart__offcanvas__body__price cart__offcanvas__body__price--new">326.700.000 ₫</span>
+                                    <del class="cart__offcanvas__body__price cart__offcanvas__body__price--old">4.064.000 ₫</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__offcanvas__body__box2">
+                <div class="uk-text-center cart__offcanvas__body__box2__txt">Customers who bought this item also bought</div>
+                <div class="cart__offcanvas__body__box2__item-20-15">
+                    <div class="cart__offcanvas__body__item">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <div class="uk-cover-container">
+                                    <img src="images/00_3bc425e7-f84e-4348-917a-4ad6a58d4493_400x400.jpg.webp" alt="" uk-cover="">
+                                    <canvas width="90" height="90"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <h4 class="uk-h4 cart__offcanvas__body__name"><a href="">Blvck Tokyo Pants</a></h4>
+                                    </div>
+                                    <div class="uk-width-auto">
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="cart__offcanvas__body__price cart__offcanvas__body__price--new">326.700.000 ₫</span>
+                                    <del class="cart__offcanvas__body__price cart__offcanvas__body__price--old">4.064.000 ₫</del>
+                                </div>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a href="" class="cart__offcanvas__body__box2__btn uk-border-rounded uk-button uk-button-secondary uk-button-small">Options</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__offcanvas__body__item">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <div class="uk-cover-container">
+                                    <img src="images/01_a8c245b3-1b8a-4b17-b566-aaa904120271_400x400.jpg.webp" alt="" uk-cover="">
+                                    <canvas width="90" height="90"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <h4 class="uk-h4 cart__offcanvas__body__name"><a href="">Bold Hoodie</a></h4>
+                                    </div>
+                                    <div class="uk-width-auto">
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="cart__offcanvas__body__price cart__offcanvas__body__price--new">326.700.000 ₫</span>
+                                    <del class="cart__offcanvas__body__price cart__offcanvas__body__price--old">4.064.000 ₫</del>
+                                </div>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a href="" class="cart__offcanvas__body__box2__btn uk-border-rounded uk-button uk-button-secondary uk-button-small">Size</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__offcanvas__body__item">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <div class="uk-cover-container">
+                                    <img src="images/back_3bf1400e-05a6-4a98-8d7b-89cd86e43d04_400x400.png.webp" alt="" uk-cover="">
+                                    <canvas width="90" height="90"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <h4 class="uk-h4 cart__offcanvas__body__name"><a href="">Blvck Skull Sweater</a></h4>
+                                    </div>
+                                    <div class="uk-width-auto">
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="cart__offcanvas__body__price cart__offcanvas__body__price--new">326.700.000 ₫</span>
+                                    <del class="cart__offcanvas__body__price cart__offcanvas__body__price--old">4.064.000 ₫</del>
+                                </div>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a href="" class="cart__offcanvas__body__box2__btn uk-border-rounded uk-button uk-button-secondary uk-button-small">Size</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__offcanvas__footer">
+            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                <div class="uk-width-expand">
+                    <span class="cart__offcanvas__footer__txt">Subtotal (3 items)</span>
+                </div>
+                <div class="uk-width-auto">
+                    <span class="cart__offcanvas__footer__txt">2.778.800.000 ₫</span>
+                </div>
+            </div>
+            <div>
+                <button class="cart__offcanvas__footer__btn uk-button uk-button-secondary uk-width-1-1 uk-border-rounded" uk-icon="icon: lock"><span class="uk-text-middle uk-margin-small-left">Checkout</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Cart-->
+
+<!--Menu-mobile-->
+<div id="offcanvas-overlay-menu" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    </div>
+</div>
+<!--/Menu-mobile-->
+<!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <header id="header" class="header" uk-sticky="end: !#app; position: top;">
+        <div class="header__top">
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="nav-overlay uk-navbar-left uk-light">
+                        <div class="uk-navbar-item uk-visible@m">
+                            <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="instagram" uk-tooltip="Instagram"></a>
+                            <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="pinterest" uk-tooltip="Pinterest"></a>
+                            <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="facebook" uk-tooltip="Facebook"></a>
+                            <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="twitter" uk-tooltip="Twitter"></a>
+                            <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="youtube" uk-tooltip="Youtube"></a>
+                            <a href="#" class="uk-icon-link" uk-icon="tiktok" uk-tooltip="Tiktok"></a>                    </div>
+                        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas-overlay-menu" uk-toggle=""></a>
+                        <a class="uk-navbar-toggle uk-hidden@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+                    </div>
+                    <div class="nav-overlay uk-navbar-center">
+                        <a href="" class="uk-navbar-item uk-logo"><img src="images/Blvck_Paris_White_110x.png.webp" alt=""></a>
+                    </div>
+                    <div class="nav-overlay uk-navbar-right uk-light">
+                        <a class="uk-navbar-toggle" uk-icon="icon: user" href=""></a>
+                        <a class="uk-navbar-toggle uk-visible@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+                        <div class="uk-navbar-item">
+                            <a class="uk-position-relative" uk-icon="icon: cart" href="#offcanvas-flip-cart" uk-toggle="">
+                                <span class="uk-badge uk-position-top-right">9</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__top__boxSearch nav-overlay uk-navbar-left uk-flex-1" hidden>
+                        <div class="uk-navbar-item uk-width-expand">
+                            <form class="uk-search uk-search-navbar uk-width-1-1">
+                                <input class="header__top__boxSearch__input uk-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
+                            </form>
+                        </div>
+                        <a class="uk-navbar-toggle btnClose_Search" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <nav class="header__bottom uk-visible@m uk-flex-center uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left uk-light">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#">MEN</a>
+                        <div class="uk-navbar-dropdown uk-padding-remove" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false; offset: 0; auto-update: false;">
+                            <div class="uk-child-width-1-3 uk-grid-collapse uk-grid-match" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-body">
+                                        <div class="uk-child-width-1-2" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="title"><a href="#">READY-TO-WEAR</a></li>
+                                                    <li><a href="#">NEW ARRIVALS</a></li>
+                                                    <li><a href="#">TEES</a></li>
+                                                    <li><a href="#">HOODIES & SWEATERS</a></li>
+                                                    <li><a href="#">PANTS</a></li>
+                                                    <li><a href="#">OUTERWEAR</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="title"><a href="#">ACCESSORIES</a></li>
+                                                    <li><a href="#">NEW ARRIVALS</a></li>
+                                                    <li><a href="#">BAGS & LEATHER</a></li>
+                                                    <li><a href="#">HIGH-TECH</a></li>
+                                                    <li><a href="#">LIFESTYLE</a></li>
+                                                    <li><a href="#">HEADWARE</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-cover-container header__bottom__cover">
+                                        <img src="images/Men-Nav_5aa642b7-259b-4343-bf6e-e062a5e8145b.jpg" alt="" uk-cover="">
+                                        <canvas width="573" height="459"></canvas>
+                                        <div class="header__bottom__box uk-position-cover uk-padding-small uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+                                            <h3 class="uk-h3 header__bottom__box__title">READY-TO-WEAR</h3>
+                                            <p class="header__bottom__box__desc">Shop Now</p>
+                                        </div>
+                                        <a href="" class="uk-position-cover"></a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-cover-container header__bottom__cover">
+                                        <img src="images/social_share_900x.jpg" alt="" uk-cover="">
+                                        <canvas width="573" height="459"></canvas>
+                                        <div class="header__bottom__box uk-position-cover uk-padding-small uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+                                            <h3 class="uk-h3 header__bottom__box__title">ACCESSORIES</h3>
+                                            <p class="header__bottom__box__desc">Shop Now</p>
+                                        </div>
+                                        <a href="" class="uk-position-cover"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">WOMEN</a>
+                    </li>
+                    <li><a href="#">ACCESSORIES</a></li>
+                    <li><a href="#">BLVCK HOME</a></li>
+                    <li><a href="#">DIGITAL</a></li>
+                    <li><a href="#">WHTE</a></li>
+                    <li><a href="#">NFT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="uk-overlay uk-overlay-primary mask_menu"></div><div class="home__slideshow uk-slideshow uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: false">
+
+    <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">
+        <li>
+            <img class="uk-cover" src="images/lifestyle05-desktop_2100x.jpg" alt="" uk-cover>
+            <div class="uk-position-cover uk-flex uk-flex-middle">
+                <div class="uk-section-xsmall uk-width-1-1 uk-text-center">
+                    <div class="uk-container uk-container-expand">
+                        <div class="home__slideshow__txt">READY-TO-WEAR</div>
+                        <h2 class="uk-h2 home__slideshow__title">Winter Sale</h2>
+                        <div class="uk-child-width-auto uk-flex-center uk-grid-10 uk-grid-40-m home__slideshow__item-60-35" uk-grid>
+                            <div>
+                                <a href="" class="home__slideshow__btn uk-button uk-button-large uk-button-secondary">SHOP MEN</a>
+                            </div>
+                            <div>
+                                <a href="" class="home__slideshow__btn uk-button uk-button-large uk-button-secondary">SHOP WOMEN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img class="uk-cover" src="images/Home_8060a3f8-beff-4f61-ba4b-6c4602cefc55.jpg" alt="" uk-cover>
+            <div class="uk-position-cover uk-flex uk-flex-middle">
+                <div class="uk-section-xsmall uk-width-1-1 uk-text-center">
+                    <div class="uk-container uk-container-expand">
+                        <div class="home__slideshow__txt">Blvck Home</div>
+                        <h2 class="uk-h2 home__slideshow__title">Bring the lifestyle home.</h2>
+                        <div class="uk-child-width-auto uk-flex-center uk-grid-10 uk-grid-40-m home__slideshow__item-60-35" uk-grid>
+                            <div>
+                                <a href="" class="home__slideshow__btn uk-button uk-button-large uk-button-secondary">Shop the collection</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+    <!--BLVCK HOME-->
+    <div class="uk-height-viewport uk-flex uk-flex-middle uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/social_share_74_d4088aec-1ac0-4f07-a1b7-0ceb116e0577.jpg" uk-img>
+        <div class="uk-section-xsmall uk-width-1-1 uk-text-center">
+            <div class="uk-container uk-container-expand">
+                <div class="home__slideshow__txt">BLVCK HOME</div>
+                <h2 class="uk-h2 home__slideshow__title">All shades of black available.</h2>
+                <div class="uk-child-width-auto uk-flex-center uk-grid-10 uk-grid-40-m home__slideshow__item-60-35" uk-grid>
+                    <div>
+                        <a href="" class="home__slideshow__btn uk-button uk-button-large uk-button-secondary">SHOP THE COLLECTION</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/BLVCK HOME-->
+
+    <!--WHTE-->
+    <div class="uk-height-viewport uk-flex uk-flex-middle uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/whte.jpg" uk-img>
+        <div class="uk-section-xsmall uk-width-1-1 uk-text-center">
+            <div class="uk-container uk-container-expand">
+                <div class="home__slideshow__txt">WHTE</div>
+                <h2 class="uk-h2 home__slideshow__title">Welcome to the bright side.</h2>
+                <div class="uk-child-width-auto uk-flex-center uk-grid-10 uk-grid-40-m home__slideshow__item-60-35" uk-grid>
+                    <div>
+                        <a href="" class="home__slideshow__btn uk-button uk-button-large uk-button-secondary">SHOP MEN</a>
+                    </div>
+                    <div>
+                        <a href="" class="home__slideshow__btn uk-button uk-button-large uk-button-secondary">SHOP WOMEN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/WHTE-->
+
+    <!--BLVCK X CASETIFY-->
+    <div class="uk-height-viewport uk-flex uk-flex-middle uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/casetify_6f1d1ac2-f7b4-450c-9a99-ebe7a5e62b6b.jpg" uk-img>
+        <div class="uk-section-xsmall uk-width-1-1 uk-text-center">
+            <div class="uk-container uk-container-expand">
+                <div class="home__slideshow__txt">BLVCK X CASETIFY</div>
+                <h2 class="uk-h2 home__slideshow__title">Limited collab.</h2>
+                <div class="uk-child-width-auto uk-flex-center uk-grid-10 uk-grid-40-m home__slideshow__item-60-35" uk-grid>
+                    <div>
+                        <a href="" class="home__slideshow__btn uk-button uk-button-large uk-button-secondary">Shop The Collab</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/BLVCK X CASETIFY-->
+
+    <!--BLOG-->
+    <div class="uk-section-xsmall uk-text-center">
+        <div class="uk-container uk-container-expand">
+            <h2 class="uk-h2 uk-margin-remove">Blog posts</h2>
+        </div>
+    </div>
+    <!--/BLOG-->
+    <footer id="footer" class="footer">
+        <div class="uk-container uk-container-expand">
+            <div class="footer__item-75-25 uk-text-center">
+                <img src="images/logo_grey_MEDIUM_db13ddee-d6fd-410a-8f17-39f9c1b31714_85x.png.webp" alt="">
+            </div>
+            <div class="footer__item-75-25">
+                <div class="uk-grid uk-child-width-1-4@m uk-visible@m" uk-grid>
+                    <div>
+                        <h4 class="uk-h4 footer__title uk-margin-remove">COLLECTIONS</h4>
+                        <ul class="uk-nav uk-nav-default footer__navList">
+                            <li><a href="">Men</a></li>
+                            <li><a href="">Women</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li><a href="">Blvck Home</a></li>
+                            <li><a href="">Digital</a></li>
+                            <li><a href="">Whte</a></li>
+                            <li><a href="">NFT</a></li>
+                        </ul>                </div>
+                    <div>
+                        <h4 class="uk-h4 footer__title uk-margin-remove">INFORMATION</h4>
+                        <ul class="uk-nav uk-nav-default footer__navList">
+                            <li><a href="">Returns</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>                </div>
+                    <div>
+                        <h4 class="uk-h4 footer__title uk-margin-remove">MORE</h4>
+                        <ul class="uk-nav uk-nav-default footer__navList">
+                            <li><a href="">Blvcklist</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Affiliate Program</a></li>
+                        </ul>                </div>
+                    <div>
+                        <h4 class="uk-h4 footer__title uk-margin-remove">SOCIAL</h4>
+                        <div class="footer__label uk-margin-small-bottom">Stay connected.</div>
+                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="instagram" uk-tooltip="Instagram"></a>
+                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="pinterest" uk-tooltip="Pinterest"></a>
+                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="facebook" uk-tooltip="Facebook"></a>
+                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="twitter" uk-tooltip="Twitter"></a>
+                        <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="youtube" uk-tooltip="Youtube"></a>
+                        <a href="#" class="uk-icon-link" uk-icon="tiktok" uk-tooltip="Tiktok"></a>                </div>
+                </div>
+                <ul class="footer__accordion uk-hidden@m" uk-accordion>
+                    <li>
+                        <a class="uk-accordion-title" href="#">COLLECTIONS</a>
+                        <div class="uk-accordion-content">
+                            <ul class="uk-nav uk-nav-default footer__navList">
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Accessories</a></li>
+                                <li><a href="">Blvck Home</a></li>
+                                <li><a href="">Digital</a></li>
+                                <li><a href="">Whte</a></li>
+                                <li><a href="">NFT</a></li>
+                            </ul>                    </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">INFORMATION</a>
+                        <div class="uk-accordion-content">
+                            <ul class="uk-nav uk-nav-default footer__navList">
+                                <li><a href="">Returns</a></li>
+                                <li><a href="">Shipping</a></li>
+                                <li><a href="">Terms</a></li>
+                                <li><a href="">Privacy</a></li>
+                                <li><a href="">FAQ</a></li>
+                            </ul>                    </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">MORE</a>
+                        <div class="uk-accordion-content">
+                            <ul class="uk-nav uk-nav-default footer__navList">
+                                <li><a href="">Blvcklist</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Affiliate Program</a></li>
+                            </ul>                    </div>
+                    </li>
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#">SOCIAL</a>
+                        <div class="uk-accordion-content">
+                            <div class="footer__label uk-margin-small-bottom">Stay connected.</div>
+                            <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="instagram" uk-tooltip="Instagram"></a>
+                            <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="pinterest" uk-tooltip="Pinterest"></a>
+                            <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="facebook" uk-tooltip="Facebook"></a>
+                            <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="twitter" uk-tooltip="Twitter"></a>
+                            <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="youtube" uk-tooltip="Youtube"></a>
+                            <a href="#" class="uk-icon-link" uk-icon="tiktok" uk-tooltip="Tiktok"></a>                    </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item-100-20 uk-text-center uk-text-left@m">
+                <div uk-form-custom="target: > * > span:first-child">
+                    <select aria-label="Custom controls">
+                        <option value="1">VND d</option>
+                        <option value="2">Option 02</option>
+                        <option value="3">Option 03</option>
+                        <option value="4">Option 04</option>
+                    </select>
+                    <button class="footer__moneySelect uk-button uk-button-default" type="button" tabindex="-1">
+                        <span></span>
+                        <span uk-icon="icon: chevron-down"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--/app-->
+<script>
+    const x = document.querySelector.bind(document);
+    const xx = document.querySelectorAll.bind(document);
+
+    const app = {
+        render: function () {
+            const uk_navbar_dropdown = x('.uk-navbar-dropdown');
+            const header = x('.header');
+            const btnClose_Search = x('.btnClose_Search');
+            const html = x('html');
+            const body = x('body');
+            const cart__offcanvas = x('.cart__offcanvas');
+
+            // Cart
+            if (cart__offcanvas){
+                // UIkit.offcanvas(cart__offcanvas).show();
+            }
+            // End Cart
+
+            // Xử lý lỗi sticky
+            document.onscroll = function () {
+                let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+                if (scrollTop > 0){
+                    header.classList.add('uk-active');
+                }else {
+                    header.classList.remove('uk-active');
+                }
+            }
+            // End Xử lý lỗi sticky
+
+            if (uk_navbar_dropdown){
+                UIkit.util.on('.uk-navbar-dropdown', 'show', function () {
+                    // do something
+                    uk_navbar_dropdown.style.maxWidth = header.offsetWidth + 'px';
+                    uk_navbar_dropdown.style.width = header.offsetWidth + 'px';
+                    uk_navbar_dropdown.style.left = 0;
+                    header.classList.add('hoverMenu');
+                });
+
+                UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
+                    // do something
+                    header.classList.remove('hoverMenu');
+                });
+            }
+
+            // Xử lý khi click button search
+            UIkit.util.on('.header__top__boxSearch', 'show', function () {
+                console.log('Show activeSearch');
+                header.classList.add('activeSearch');
+                html.style.overflowY = 'hidden';
+                html.style.touchAction = 'none';
+                html.style.paddingRight = 0;
+                body.style.touchAction = 'pan-y pinch-zoom';
+            });
+            if (btnClose_Search){
+                btnClose_Search.addEventListener('click',()=>{
+                    console.log('Hide activeSearch');
+                    header.classList.remove('activeSearch');
+                    html.style.removeProperty('overflow-y');
+                    html.style.removeProperty('touch-action');
+                    html.style.removeProperty('padding-right');
+                    body.style.removeProperty('touch-action');
+                })
+            }
+            // .End Xử lý khi click button search
+        },
+        start: function () {
+            this.render();
+        }
+    }
+    app.start();
+
+
+    $(window).on("load", function (e) {
+        UIkit.util.on('.header__top__boxSearch,.uk-navbar-dropdown', 'show', function () {
+            // do something
+            $('.mask_menu').fadeIn(300);
+        });
+
+        $('.btnClose_Search').on('click',()=>{
+            $('.mask_menu').stop(true, true).fadeOut(300);
+        })
+
+        UIkit.util.on('.uk-navbar-dropdown', 'hide', function () {
+            // do something
+            $('.mask_menu').stop(true, true).fadeOut(300);
+        });
+    });
+</script>
 </body>
 </html>
