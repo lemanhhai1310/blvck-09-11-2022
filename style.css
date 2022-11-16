@@ -1290,6 +1290,7 @@ body {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 500px;
+    transition: right 0.25s ease-in-out;
   }
   .uk-offcanvas-flip .cart__offcanvas__bar {
     right: calc(0px - 500px - 15px);

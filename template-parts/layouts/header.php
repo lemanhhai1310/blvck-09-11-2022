@@ -232,7 +232,7 @@
         <div class="uk-navbar-left uk-light">
             <ul class="uk-navbar-nav">
                 <li>
-                    <a href="#">MEN</a>
+                    <a href="product.php">MEN</a>
                     <div class="uk-navbar-dropdown uk-padding-remove" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false; offset: 0; auto-update: false;">
                         <div class="uk-child-width-1-3 uk-grid-collapse uk-grid-match" uk-grid>
                             <div>
@@ -287,9 +287,9 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">WOMEN</a>
+                    <a href="product.php">WOMEN</a>
                 </li>
-                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="product.php">ACCESSORIES</a></li>
                 <li><a href="#">BLVCK HOME</a></li>
                 <li><a href="#">DIGITAL</a></li>
                 <li><a href="#">WHTE</a></li>

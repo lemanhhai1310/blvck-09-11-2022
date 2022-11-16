@@ -13,6 +13,7 @@
         border-bottom-left-radius: #{$x};
         border-bottom-right-radius: #{$x};
         width: #{$w};
+        transition: right .25s ease-in-out;
         .uk-offcanvas-flip &{
           right: calc(0px - #{$w} - #{$x});
         }
