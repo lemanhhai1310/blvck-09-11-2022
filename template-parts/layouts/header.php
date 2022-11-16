@@ -194,7 +194,7 @@
 <!--/Menu-mobile-->
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
-<header id="header" class="header" uk-sticky="end: !#app; position: top;">
+<header id="header" class="header <?= (isset($headerTransparent) && $headerTransparent)? 'headerTransparent': 'notTransparent' ?>" uk-sticky="end: !#app; position: top;">
     <div class="header__top">
         <div class="uk-container uk-container-expand">
             <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
@@ -206,7 +206,7 @@
                     <a class="uk-navbar-toggle uk-hidden@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
                 </div>
                 <div class="nav-overlay uk-navbar-center">
-                    <a href="" class="uk-navbar-item uk-logo"><img src="images/Blvck_Paris_White_110x.png.webp" alt=""></a>
+                    <a href="." class="uk-navbar-item uk-logo"><img src="images/Blvck_Paris_White_110x.png.webp" alt=""></a>
                 </div>
                 <div class="nav-overlay uk-navbar-right uk-light">
                     <a class="uk-navbar-toggle" uk-icon="icon: user" href=""></a>
@@ -294,6 +294,7 @@
                 <li><a href="#">DIGITAL</a></li>
                 <li><a href="#">WHTE</a></li>
                 <li><a href="#">NFT</a></li>
+                <li><a href="blog.php">BLOG</a></li>
             </ul>
         </div>
     </nav>

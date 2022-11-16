@@ -79,6 +79,7 @@
             const html = x('html');
             const body = x('body');
             const cart__offcanvas = x('.cart__offcanvas');
+            const uk_sticky_placeholder = x('.uk-sticky-placeholder');
 
             // Cart
             if (cart__offcanvas){
@@ -121,6 +122,7 @@
                 html.style.touchAction = 'none';
                 html.style.paddingRight = 0;
                 body.style.touchAction = 'pan-y pinch-zoom';
+                uk_sticky_placeholder.style.height = header.offsetHeight + 'px';
             });
             if (btnClose_Search){
                 btnClose_Search.addEventListener('click',()=>{
@@ -130,6 +132,7 @@
                     html.style.removeProperty('touch-action');
                     html.style.removeProperty('padding-right');
                     body.style.removeProperty('touch-action');
+                    uk_sticky_placeholder.style.height = header.offsetHeight + 'px';
                 })
             }
             // .End Xử lý khi click button search
