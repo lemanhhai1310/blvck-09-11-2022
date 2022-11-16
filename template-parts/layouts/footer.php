@@ -122,7 +122,9 @@
                 html.style.touchAction = 'none';
                 html.style.paddingRight = 0;
                 body.style.touchAction = 'pan-y pinch-zoom';
-                uk_sticky_placeholder.style.height = header.offsetHeight + 'px';
+                if (uk_sticky_placeholder){
+                    uk_sticky_placeholder.style.height = header.offsetHeight + 'px';
+                }
             });
             if (btnClose_Search){
                 btnClose_Search.addEventListener('click',()=>{
@@ -132,7 +134,9 @@
                     html.style.removeProperty('touch-action');
                     html.style.removeProperty('padding-right');
                     body.style.removeProperty('touch-action');
-                    uk_sticky_placeholder.style.height = header.offsetHeight + 'px';
+                    if (uk_sticky_placeholder){
+                        uk_sticky_placeholder.style.height = header.offsetHeight + 'px';
+                    }
                 })
             }
             // .End Xử lý khi click button search
