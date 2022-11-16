@@ -1071,14 +1071,12 @@ body {
 
 .header {
   z-index: 982;
-  width: 100% !important;
 }
 .header ~ .uk-sticky-placeholder {
   display: none !important;
 }
 .header.activeSearch, .header.hoverMenu, .header.uk-active {
   background: #000;
-  top: 0 !important;
 }
 .header__dc, .header__bottom, .header {
   transition: all 0.3s ease;

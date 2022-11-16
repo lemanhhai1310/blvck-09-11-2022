@@ -96,4 +96,8 @@
     </div>
 </div>
 <!--/BLVCK X CASETIFY-->
+
+<!--BLOG-->
+
+<!--/BLOG-->
 <?php require "template-parts/layouts/footer.php"; ?>
