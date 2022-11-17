@@ -21,7 +21,7 @@
 
   &.activeSearch,
   &.hoverMenu,
-  &.uk-active{
+  &.uk-sticky-below{
     background: #000;
   }
   &__dc{
@@ -76,7 +76,7 @@
     }
     .notTransparent &,
     .hoverMenu &,
-    .uk-active &{
+    .uk-sticky-below &{
       border-color: rgb(47,47,47);
     }
     .uk-navbar-dropdown{

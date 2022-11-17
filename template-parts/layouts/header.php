@@ -137,4 +137,4 @@
         </div>
     </nav>
 </header>
-<div class="uk-overlay uk-overlay-primary mask_menu"></div>
+<div class="uk-overlay uk-overlay-default mask_menu"></div>
