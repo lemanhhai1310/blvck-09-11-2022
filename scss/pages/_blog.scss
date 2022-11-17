@@ -13,7 +13,7 @@
   &__title1{
     @extend .fz-40;
     font-family: $font-Montserrat-Medium;
-    color: rgb(33, 33, 33);
+    color: rgb(33, 33, 33) !important;
     @include media-breakpoint-up('m'){
       margin-bottom: 30px;
     }
@@ -24,7 +24,7 @@
       margin-top: 40px !important;
     }
     font-family: $font-AvenirNextLTPro-Regular;
-    color: rgb(33, 33, 33);
+    color: rgb(33, 33, 33) !important;
     @extend .fz-18;
     line-height: (26/18);
   }

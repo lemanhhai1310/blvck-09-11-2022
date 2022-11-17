@@ -1,6 +1,6 @@
 .sidebar{
   &__title{
-    color: rgb(33, 33, 33);
+    color: rgb(33, 33, 33) !important;
     @extend .fz-22;
     font-family: $font-Montserrat-Regular;
     line-height: (31/22);

@@ -1356,7 +1356,7 @@ body {
 }
 
 .sidebar__title {
-  color: rgb(33, 33, 33);
+  color: rgb(33, 33, 33) !important;
   font-family: "Montserrat Regular", sans-serif;
   line-height: 1.4090909091;
   padding-bottom: 8px;
@@ -1655,7 +1655,7 @@ body {
 }
 .blog__title1 {
   font-family: "Montserrat Medium", sans-serif;
-  color: rgb(33, 33, 33);
+  color: rgb(33, 33, 33) !important;
 }
 @media (min-width: 960px) {
   .blog__title1 {
@@ -1665,7 +1665,7 @@ body {
 .blog__article {
   margin-top: 20px !important;
   font-family: "Avenir Next LT Pro Regular", sans-serif;
-  color: rgb(33, 33, 33);
+  color: rgb(33, 33, 33) !important;
   line-height: 1.4444444444;
 }
 @media (min-width: 960px) {
