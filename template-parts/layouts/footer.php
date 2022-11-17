@@ -98,9 +98,9 @@
                 let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
                 if (scrollTop > 0){
-                    header.classList.add('uk-active');
+                    // header.classList.add('uk-active');
                 }else {
-                    header.classList.remove('uk-active');
+                    // header.classList.remove('uk-active');
                 }
             }
             // End Xử lý lỗi sticky
