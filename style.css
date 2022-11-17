@@ -895,16 +895,16 @@ body {
   }
 }
 
-.fz-13 {
+.fz-13, .blog__boxTime {
   font-size: 13px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-13 {
+  .fz-13, .blog__boxTime {
     font-size: calc(13px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-13 {
+  .fz-13, .blog__boxTime {
     font-size: 13px !important;
   }
 }
@@ -951,6 +951,20 @@ body {
   }
 }
 
+.fz-18, .blog__article {
+  font-size: 16.2px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-18, .blog__article {
+    font-size: calc(16.2px + 1.8 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-18, .blog__article {
+    font-size: 18px !important;
+  }
+}
+
 .fz-20 {
   font-size: 16px !important;
 }
@@ -962,6 +976,20 @@ body {
 @media screen and (min-width: 1200px) {
   .fz-20 {
     font-size: 20px !important;
+  }
+}
+
+.fz-22, .sidebar__title {
+  font-size: 17.6px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-22, .sidebar__title {
+    font-size: calc(17.6px + 4.4 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-22, .sidebar__title {
+    font-size: 22px !important;
   }
 }
 
@@ -1004,6 +1032,20 @@ body {
 @media screen and (min-width: 1200px) {
   .fz-32, .home__title {
     font-size: 32px !important;
+  }
+}
+
+.fz-40, .blog__title1 {
+  font-size: 28px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-40, .blog__title1 {
+    font-size: calc(28px + 12 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-40, .blog__title1 {
+    font-size: 40px !important;
   }
 }
 
@@ -1313,6 +1355,14 @@ body {
   }
 }
 
+.sidebar__title {
+  color: rgb(33, 33, 33);
+  font-family: "Montserrat Regular", sans-serif;
+  line-height: 1.4090909091;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(191, 191, 191);
+}
+
 .cart__offcanvas__bar {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -1602,6 +1652,49 @@ body {
   color: rgb(33, 33, 33);
   font-family: "Montserrat Regular", sans-serif;
   line-height: 1.2;
+}
+.blog__title1 {
+  font-family: "Montserrat Medium", sans-serif;
+  color: rgb(33, 33, 33);
+}
+@media (min-width: 960px) {
+  .blog__title1 {
+    margin-bottom: 30px;
+  }
+}
+.blog__article {
+  margin-top: 20px !important;
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
+  color: rgb(33, 33, 33);
+  line-height: 1.4444444444;
+}
+@media (min-width: 960px) {
+  .blog__article {
+    margin-top: 40px !important;
+  }
+}
+.blog__boxTime {
+  padding: 25px 0;
+  border-top: 1px solid rgb(191, 191, 191);
+  border-bottom: 1px solid rgb(191, 191, 191);
+  font-family: "Avenir Next LT Pro Regular", sans-serif;
+  line-height: 1.3846153846;
+}
+.blog__boxTime > *:nth-child(n+2) {
+  margin-left: 8px;
+  padding-left: calc(8px + 4px);
+  position: relative;
+}
+.blog__boxTime > *:nth-child(n+2):before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgb(33, 33, 33);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .blog__time {
   line-height: 1.3333333333;

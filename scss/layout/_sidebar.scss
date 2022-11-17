@@ -1,0 +1,10 @@
+.sidebar{
+  &__title{
+    color: rgb(33, 33, 33);
+    @extend .fz-22;
+    font-family: $font-Montserrat-Regular;
+    line-height: (31/22);
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(191, 191, 191);
+  }
+}
