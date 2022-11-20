@@ -46,6 +46,92 @@
     <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
 </div>
+
+<!--Product-->
+<h2 class="uk-h2 uk-text-center home__product__title">Just Dropped</h2>
+
+<ul class="home__product__navTabs home__product__item-32-20 uk-subnav uk-subnav-pill uk-flex-center" uk-switcher="connect: .switcher-container">
+    <li><a href="#">Women</a></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Accessories</a></li>
+</ul>
+
+<ul class="uk-switcher switcher-container home__slideshow__item-60-35">
+    <li>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+            <ul class="uk-slider-items uk-child-width-auto">
+                <?php
+                $data = array(
+                    array(
+                        'img' => 'images/DSC03839_540x.jpg',
+                        'img2' => 'images/DSC03835_540x.jpg',
+                        'name' => 'Blvck Oversize Blazer',
+                        'price' => '4.524.000₫',
+                        'price_old' => '5.655.000₫',
+                    ),
+                    array(
+                        'img' => 'images/DSC03839_540x.jpg',
+                        'img2' => 'images/DSC03835_540x.jpg',
+                        'name' => 'Blvck Oversize Blazer',
+                        'price' => '4.524.000₫',
+                        'price_old' => '5.655.000₫',
+                    ),
+                    array(
+                        'img' => 'images/DSC03839_540x.jpg',
+                        'img2' => 'images/DSC03835_540x.jpg',
+                        'name' => 'Blvck Oversize Blazer',
+                        'price' => '4.524.000₫',
+                        'price_old' => '5.655.000₫',
+                    ),
+                    array(
+                        'img' => 'images/DSC03839_540x.jpg',
+                        'img2' => 'images/DSC03835_540x.jpg',
+                        'name' => 'Blvck Oversize Blazer',
+                        'price' => '4.524.000₫',
+                        'price_old' => '5.655.000₫',
+                    ),
+                    array(
+                        'img' => 'images/DSC03839_540x.jpg',
+                        'img2' => 'images/DSC03835_540x.jpg',
+                        'name' => 'Blvck Oversize Blazer',
+                        'price' => '4.524.000₫',
+                        'price_old' => '5.655.000₫',
+                    ),
+                );
+                foreach ($data as $k=>$v): ?>
+                <li>
+                    <div class="uk-card home__product__card">
+                        <div class="uk-cover-container uk-inline-clip uk-transition-toggle">
+                            <img src="<?= $v['img'] ?>" alt="" uk-cover="">
+                            <img class="uk-transition-scale-up" src="<?= $v['img2'] ?>" alt="" uk-cover="">
+                            <a class="home__product__card__quickadd uk-transition-slide-bottom uk-text-center uk-link-toggle uk-position-bottom uk-overlay uk-overlay-default">
+                                Quick add
+                            </a>
+                            <canvas width="524" height="524"></canvas>
+                        </div>
+                        <div class="home__product__card__body uk-text-center">
+                            <h3 class="uk-h3 uk-margin-remove home__product__card__title"><a href="" class="uk-link-toggle"><?= $v['name'] ?></a></h3>
+                            <div class="item__4">
+                                <span class="home__product__card__price home__product__card__price--new"><?= $v['price'] ?></span>
+                                <del class="home__product__card__price home__product__card__price--old"><?= $v['price_old'] ?></del>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+        </div>
+    </li>
+    <li>Hello again!</li>
+    <li>Bazinga!</li>
+</ul>
+<!--/Product-->
+
 <!--BLVCK HOME-->
 <div class="uk-height-viewport uk-flex uk-flex-middle uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/social_share_74_d4088aec-1ac0-4f07-a1b7-0ceb116e0577.jpg" uk-img>
     <div class="uk-section-xsmall uk-width-1-1 uk-text-center">

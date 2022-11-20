@@ -29,4 +29,10 @@
       margin-top: #{$x}px;
     }
   }
+  $x:4;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
 }
