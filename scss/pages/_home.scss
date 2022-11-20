@@ -8,7 +8,14 @@
   &__product{
     &__card{
       border: 1px solid #ffffff;
+      border-left: none;
       background-color: #b6b6b6;
+      canvas{
+        width: 362px !important;
+        @include media-breakpoint-up('m'){
+          width: 524px !important;
+        }
+      }
       &__body{
         padding: 7px;
         padding-bottom: 40px;

@@ -1602,7 +1602,16 @@ body {
 }
 .home__product__card {
   border: 1px solid #ffffff;
+  border-left: none;
   background-color: #b6b6b6;
+}
+.home__product__card canvas {
+  width: 362px !important;
+}
+@media (min-width: 960px) {
+  .home__product__card canvas {
+    width: 524px !important;
+  }
 }
 .home__product__card__body {
   padding: 7px;

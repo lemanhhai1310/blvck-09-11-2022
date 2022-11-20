@@ -71,8 +71,8 @@
                         'price_old' => '5.655.000₫',
                     ),
                     array(
-                        'img' => 'images/DSC03839_540x.jpg',
-                        'img2' => 'images/DSC03835_540x.jpg',
+                        'img' => 'images/3_9ffdb763-9804-44cc-b80b-e75da54f8be9_540x.jpg',
+                        'img2' => 'images/front_53fd5622-4fd4-441d-a1dc-59a706224d67_540x.jpg',
                         'name' => 'Blvck Oversize Blazer',
                         'price' => '4.524.000₫',
                         'price_old' => '5.655.000₫',
