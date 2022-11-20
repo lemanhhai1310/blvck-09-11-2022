@@ -17,6 +17,15 @@ const app = {
         const header__top = x('.header__top');
         const headerTransparent = x('.headerTransparent');
         const mask_menu = x('.mask_menu');
+        const li = xx('.header__bottom .uk-navbar-dropdown-nav > li');
+
+        let second = 0;
+        if (li){
+            li.forEach((element,index)=>{
+                element.style.transitionDelay = second + 'ms';
+                second = second + 20;
+            });
+        }
 
         if (headerTransparent){
 
