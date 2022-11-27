@@ -60,7 +60,7 @@
     <li>
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-            <ul class="uk-slider-items uk-child-width-auto">
+            <ul class="uk-slider-items uk-child-width-auto uk-grid-match">
                 <?php
                 $data = array(
                     array(
@@ -69,6 +69,7 @@
                         'name' => 'Blvck Oversize Blazer',
                         'price' => '4.524.000₫',
                         'price_old' => '5.655.000₫',
+                        'review' => false,
                     ),
                     array(
                         'img' => 'images/3_9ffdb763-9804-44cc-b80b-e75da54f8be9_540x.jpg',
@@ -76,6 +77,7 @@
                         'name' => 'Blvck Oversize Blazer',
                         'price' => '4.524.000₫',
                         'price_old' => '5.655.000₫',
+                        'review' => true,
                     ),
                     array(
                         'img' => 'images/DSC03839_540x.jpg',
@@ -83,6 +85,7 @@
                         'name' => 'Blvck Oversize Blazer',
                         'price' => '4.524.000₫',
                         'price_old' => '5.655.000₫',
+                        'review' => true,
                     ),
                     array(
                         'img' => 'images/DSC03839_540x.jpg',
@@ -90,6 +93,7 @@
                         'name' => 'Blvck Oversize Blazer',
                         'price' => '4.524.000₫',
                         'price_old' => '5.655.000₫',
+                        'review' => true,
                     ),
                     array(
                         'img' => 'images/DSC03839_540x.jpg',
@@ -97,27 +101,12 @@
                         'name' => 'Blvck Oversize Blazer',
                         'price' => '4.524.000₫',
                         'price_old' => '5.655.000₫',
+                        'review' => true,
                     ),
                 );
                 foreach ($data as $k=>$v): ?>
                 <li>
-                    <div class="uk-card home__product__card">
-                        <div class="uk-cover-container uk-inline-clip uk-transition-toggle">
-                            <img src="<?= $v['img'] ?>" alt="" uk-cover="">
-                            <img class="uk-transition-scale-up" src="<?= $v['img2'] ?>" alt="" uk-cover="">
-                            <a class="home__product__card__quickadd uk-transition-slide-bottom uk-text-center uk-link-toggle uk-position-bottom uk-overlay uk-overlay-default">
-                                Quick add
-                            </a>
-                            <canvas width="524" height="524"></canvas>
-                        </div>
-                        <div class="home__product__card__body uk-text-center">
-                            <h3 class="uk-h3 uk-margin-remove home__product__card__title"><a href="" class="uk-link-toggle"><?= $v['name'] ?></a></h3>
-                            <div class="item__4">
-                                <span class="home__product__card__price home__product__card__price--new"><?= $v['price'] ?></span>
-                                <del class="home__product__card__price home__product__card__price--old"><?= $v['price_old'] ?></del>
-                            </div>
-                        </div>
-                    </div>
+                    <?php require "template-parts/layouts/product_card.php"; ?>
                 </li>
                 <?php endforeach; ?>
             </ul>

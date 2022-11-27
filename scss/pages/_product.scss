@@ -1,0 +1,92 @@
+.product{
+  &__offcanvas{
+    &__bar{
+      padding: 0;
+      background: #ffffff;
+      >*{
+        color: rgb(33,33,33);
+      }
+    }
+    &__padding{
+      padding: 15px 15px;
+    }
+    &__title{
+      margin: 0;
+    }
+    &__btnReset{
+      color: #000000 !important;
+      border-color: #000000 !important;
+      text-transform: inherit;
+      line-height: 44px;
+      @extend .fz-16;
+      font-family: $font-AvenirNextLTPro-Regular;
+      &:hover{
+        background: #000000 !important;
+        color: #ffffff !important;
+      }
+    }
+    &__header{
+      @extend .product__offcanvas__padding;
+      background: #000;
+    }
+    &__body{
+      @extend .product__offcanvas__padding;
+    }
+    &__footer{
+      @extend .product__offcanvas__padding;
+    }
+  }
+  &__title{
+    color: rgb(255, 255, 255);
+    //@extend .fz-90;
+    line-height: (108/90);
+    font-family: $font-Montserrat-Regular;
+    @include fluidx(90px,40px,font-size);
+  }
+  &__span{
+    background-color: #0006;
+    @extend .fz-12;
+    padding: 0 40px;
+    text-transform: uppercase;
+    font-family: $font-AvenirNextLTPro-Bold;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff !important;
+  }
+  &__content{
+    &__fillter{
+      background: #000;
+      min-height: 57px;
+      border-top: 1px solid white;
+      &__navItem{
+        padding: 0 18px;
+        @extend .fz-10;
+        font-family: $font-AvenirNextLTPro-Regular;
+        color: #ffffff;
+        min-height: 57px;
+      }
+      &__sort{
+        border-left: 1px solid rgb(191, 191, 191);
+      }
+      &__btn{
+        border-right: 1px solid rgb(191, 191, 191);
+      }
+      &__dropdown{
+        background: #000;
+        border: 1px solid #ffffff;
+        padding: 10px 15px;
+        .uk-nav{
+          >li{
+            >a{
+              @extend .fz-12;
+              //color: #ffffff;
+              font-family: $font-AvenirNextLTPro-Regular;
+            }
+          }
+        }
+      }
+    }
+  }
+}

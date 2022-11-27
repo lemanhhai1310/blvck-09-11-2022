@@ -10,15 +10,43 @@
       border: 1px solid #ffffff;
       border-left: none;
       background-color: #b6b6b6;
+      .uk-grid-margin> &{
+        border-top: none;
+      }
       canvas{
         width: 362px !important;
         @include media-breakpoint-up('m'){
           width: 524px !important;
         }
       }
+      &__sale-box{
+        margin: 5px;
+        padding: 0 15px;
+        background: #000 !important;
+        color: #ffffff !important;
+        border-radius: 0;
+        @extend .fz-11;
+        font-family: $font-AvenirNextLTPro-Regular;
+        min-width: 80px;
+        height: 34px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &__review{
+        i.fa{
+          color: rgb(33,33,33) !important;
+        }
+        &__txt{
+          color: rgb(33,33,33) !important;
+          @extend .fz-16;
+          line-height: (22/16);
+          font-family: $font-AvenirNextLTPro-Regular;
+        }
+      }
       &__body{
         padding: 7px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
       }
       &__quickadd{
         padding: 15px 15px;
@@ -27,6 +55,12 @@
         @extend .fz-11;
         letter-spacing: 1.32px;
         font-family: $font-AvenirNextLTPro-Regular;
+        .product__content &{
+          padding: 10px 15px;
+          @include media-breakpoint-up('m'){
+            padding: 15px 15px;
+          }
+        }
       }
       &__title{
         color: rgb(0, 0, 0);

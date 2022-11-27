@@ -18,6 +18,11 @@ const app = {
         const headerTransparent = x('.headerTransparent');
         const mask_menu = x('.mask_menu');
         const li = xx('.header__bottom .uk-navbar-dropdown-nav > li');
+        const product__offcanvas = x('#offcanvas-overlay-fillter');
+
+        if (product__offcanvas){
+            UIkit.offcanvas(product__offcanvas).show();
+        }
 
         let second = 0;
         if (li){
