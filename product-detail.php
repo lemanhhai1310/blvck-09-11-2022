@@ -49,25 +49,27 @@
                         <span class="productDetail__contentLeft__price productDetail__contentLeft__price--new">6.322.000₫</span>
                         <del class="productDetail__contentLeft__price productDetail__contentLeft__price--old">7.903.000₫</del>
                     </div>
-                    <div class="uk-margin-top uk-grid-small uk-child-width-auto uk-grid" uk-grid>
-                        <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2" checked> <span class="productDetail__contentLeft__label">XS</span></label>
-                        <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">S</span></label>
-                        <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">M</span></label>
-                        <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">L</span></label>
-                        <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">XL</span></label>
-                    </div>
-                    <div class="uk-margin" uk-form-custom="target: > * > span:first-child">
-                        <select aria-label="Custom controls">
-                            <option value="">Please select...</option>
-                            <option value="1">Option 01</option>
-                            <option value="2">Option 02</option>
-                            <option value="3">Option 03</option>
-                            <option value="4">Option 04</option>
-                        </select>
-                        <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                            <span></span>
-                            <span uk-icon="icon: chevron-down"></span>
-                        </button>
+                    <div class="uk-margin-medium">
+                        <div class="uk-margin-top uk-grid-small uk-child-width-auto uk-grid" uk-grid>
+                            <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2" checked> <span class="productDetail__contentLeft__label">XS</span></label>
+                            <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">S</span></label>
+                            <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">M</span></label>
+                            <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">L</span></label>
+                            <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">XL</span></label>
+                        </div>
+                        <div class="uk-margin" uk-form-custom="target: > * > span:first-child">
+                            <select aria-label="Custom controls">
+                                <option value="">Please select...</option>
+                                <option value="1">Option 01</option>
+                                <option value="2">Option 02</option>
+                                <option value="3">Option 03</option>
+                                <option value="4">Option 04</option>
+                            </select>
+                            <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                                <span></span>
+                                <span uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
                     </div>
                     <div class="uk-child-width-expand uk-grid-10" uk-grid>
                         <div>
