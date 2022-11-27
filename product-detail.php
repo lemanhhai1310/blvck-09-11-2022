@@ -49,7 +49,7 @@
                         <span class="productDetail__contentLeft__price productDetail__contentLeft__price--new">6.322.000₫</span>
                         <del class="productDetail__contentLeft__price productDetail__contentLeft__price--old">7.903.000₫</del>
                     </div>
-                    <div class="uk-margin-medium">
+                    <div class="" uk-toggle="cls: uk-margin-medium; mode: media; media: @m">
                         <div class="uk-margin-top uk-grid-small uk-child-width-auto uk-grid" uk-grid>
                             <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2" checked> <span class="productDetail__contentLeft__label">XS</span></label>
                             <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">S</span></label>
