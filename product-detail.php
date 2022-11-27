@@ -49,38 +49,38 @@
                         <span class="productDetail__contentLeft__price productDetail__contentLeft__price--new">6.322.000₫</span>
                         <del class="productDetail__contentLeft__price productDetail__contentLeft__price--old">7.903.000₫</del>
                     </div>
-                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                        <label><input class="uk-radio" type="radio" name="radio2" checked> <span>XS</span></label>
-                        <label><input class="uk-radio" type="radio" name="radio2"> <span>S</span></label>
-                        <label><input class="uk-radio" type="radio" name="radio2"> <span>M</span></label>
-                        <label><input class="uk-radio" type="radio" name="radio2"> <span>L</span></label>
-                        <label><input class="uk-radio" type="radio" name="radio2"> <span>XL</span></label>
+                    <div class="uk-margin-top uk-grid-small uk-child-width-auto uk-grid" uk-grid>
+                        <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2" checked> <span class="productDetail__contentLeft__label">XS</span></label>
+                        <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">S</span></label>
+                        <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">M</span></label>
+                        <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">L</span></label>
+                        <label><input class="uk-radio productDetail__contentLeft__radio" type="radio" name="radio2"> <span class="productDetail__contentLeft__label">XL</span></label>
                     </div>
-                    <div class="uk-margin">
-                        <div uk-form-custom="target: > * > span:first-child">
-                            <select aria-label="Custom controls">
-                                <option value="">Please select...</option>
-                                <option value="1">Option 01</option>
-                                <option value="2">Option 02</option>
-                                <option value="3">Option 03</option>
-                                <option value="4">Option 04</option>
-                            </select>
-                            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                                <span></span>
-                                <span uk-icon="icon: chevron-down"></span>
+                    <div class="uk-margin" uk-form-custom="target: > * > span:first-child">
+                        <select aria-label="Custom controls">
+                            <option value="">Please select...</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                        </select>
+                        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                            <span></span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </button>
+                    </div>
+                    <div class="uk-child-width-expand uk-grid-10" uk-grid>
+                        <div>
+                            <button class="productDetail__contentLeft__btn productDetail__contentLeft__btn--addCart uk-button uk-button-large uk-background-secondary uk-width-1-1@l">ADD TO CART</button>
+                        </div>
+                        <div>
+                            <button class="productDetail__contentLeft__btn productDetail__contentLeft__btn--buy uk-button uk-button-large uk-background-secondary uk-width-1-1@l">
+                                Buy with
                             </button>
                         </div>
                     </div>
-                    <div class="uk-child-width-expand" uk-grid>
-                        <div>
-                            <button class="uk-button uk-button-large uk-background-secondary uk-width-1-1@l">ADD TO CART</button>
-                        </div>
-                        <div>
-                            <button class="uk-button uk-button-large uk-background-secondary uk-width-1-1@l">Buy with</button>
-                        </div>
-                    </div>
                     <div class="uk-margin">
-                        <button class="uk-button uk-button-large uk-button-default uk-width-1-1@l">Find my size</button>
+                        <button class="productDetail__contentLeft__btn productDetail__contentLeft__btn--find uk-button uk-button-large uk-button-default uk-width-1-1@l">Find my size</button>
                     </div>
                     <div class="uk-margin">
                         <div class="uk-child-width-auto uk-flex-middle uk-flex-center uk-grid-8" uk-grid>
@@ -95,28 +95,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="uk-margin uk-padding-small uk-card uk-card-body uk-alert-warning uk-text-center">
+                    <div class="uk-margin productDetail__contentLeft__boxSale uk-padding-small uk-card uk-card-body uk-alert-warning uk-text-center">
                         You might be eligble for discounts of up to 35% on this product. Connect your wallet to find out if you are!
                     </div>
                     <div class="uk-margin">
-                        <button class="uk-button uk-button-large uk-background-secondary uk-width-1-1@l">Connect Wallet</button>
+                        <button class="productDetail__contentLeft__btn productDetail__contentLeft__btn--connect uk-button uk-button-large uk-background-secondary uk-width-1-1@l">Connect Wallet</button>
                     </div>
-                    <ul uk-accordion>
-                        <li class="uk-open">
-                            <a class="uk-accordion-title" href="#">DESCRIPTION</a>
-                            <div class="uk-accordion-content">
+                    <ul class="productDetail__contentLeft__accordion" uk-accordion>
+                        <li class="productDetail__contentLeft__accordion__li uk-open">
+                            <a class="uk-accordion-title productDetail__contentLeft__accordion__title" href="#">DESCRIPTION</a>
+                            <div class="uk-accordion-content productDetail__contentLeft__accordion__content">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </li>
-                        <li>
-                            <a class="uk-accordion-title" href="#">SHIPPING & RETURNS</a>
-                            <div class="uk-accordion-content">
+                        <li class="productDetail__contentLeft__accordion__li">
+                            <a class="uk-accordion-title productDetail__contentLeft__accordion__title" href="#">SHIPPING & RETURNS</a>
+                            <div class="uk-accordion-content productDetail__contentLeft__accordion__content">
                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
                             </div>
                         </li>
-                        <li>
-                            <a class="uk-accordion-title" href="#">REVIEWS</a>
-                            <div class="uk-accordion-content">
+                        <li class="productDetail__contentLeft__accordion__li">
+                            <a class="uk-accordion-title productDetail__contentLeft__accordion__title" href="#">REVIEWS</a>
+                            <div class="uk-accordion-content productDetail__contentLeft__accordion__content">
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
                             </div>
                         </li>
